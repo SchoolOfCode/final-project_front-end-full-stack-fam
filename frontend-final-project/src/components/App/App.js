@@ -1,14 +1,14 @@
 import './App.css';
 // import {useEffect} from 'react'
 import {Routes, Route} from 'react-router-dom'
-import LandingPage from '../LandingPage/LandingPage';
-import LoginPage from '../LoginPage/LoginPage';
-import SignupPage from '../SignupPage/SignupPage';
-import ParentHomepage from '../ParentHomepage/ParentHomepage';
-import ChildHomepage from '../ChildHomepage/ChildHomepage';
-import ExpeditionPage from '../ExpeditionPage/ExpeditionPage';
-import ActivityPage from '../ActivityPage/ActivityPage';
-import ResultsPage from '../ResultsPage/ResultsPage';
+import LandingPage from '../routes/LandingPage/LandingPage';
+import LoginPage from '../routes/LoginPage/LoginPage';
+import SignupPage from '../routes/SignupPage/SignupPage';
+import ParentHomepage from '../routes/ParentHomepage/ParentHomepage';
+import ChildHomepage from '../routes/ChildHomepage/ChildHomepage';
+import ExpeditionPage from '../routes/ExpeditionPage/ExpeditionPage';
+import ActivityPage from '../routes/ActivityPage/ActivityPage';
+import ResultsPage from '../routes/ResultsPage/ResultsPage';
 
 // const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
