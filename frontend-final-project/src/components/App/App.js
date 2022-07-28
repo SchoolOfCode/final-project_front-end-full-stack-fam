@@ -1,4 +1,7 @@
 import './App.css';
+import LoginButton from "../Login/LoginButton";
+import LogoutButton from "../Login/LogoutButton";
+import Profile from "../Login/Profile";
 import {Routes, Route} from 'react-router-dom'
 import LandingPage from '../../routes/LandingPage/LandingPage';
 import LoginPage from '../../routes/LoginPage/LoginPage';
@@ -14,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+    
      <h1> Welcome to Jungle Sums! </h1>
       <Routes>
         <Route path="/" element={<LandingPage/>} />
@@ -25,6 +29,9 @@ function App() {
         <Route path="activity" element={<ActivityPage/>} />
         <Route path="results" element={<ResultsPage/>} />
       </Routes>
+      <LoginButton />
+      <LogoutButton />
+      <Profile />
     </div>
   );
 }
