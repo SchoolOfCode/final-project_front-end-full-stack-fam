@@ -1,46 +1,20 @@
 import './App.css';
-// import {useEffect} from 'react'
 import {Routes, Route} from 'react-router-dom'
-import LandingPage from '../routes/LandingPage/LandingPage';
-import LoginPage from '../routes/LoginPage/LoginPage';
-import SignupPage from '../routes/SignupPage/SignupPage';
-import ParentHomepage from '../routes/ParentHomepage/ParentHomepage';
-import ChildHomepage from '../routes/ChildHomepage/ChildHomepage';
-import ExpeditionPage from '../routes/ExpeditionPage/ExpeditionPage';
-import ActivityPage from '../routes/ActivityPage/ActivityPage';
-import ResultsPage from '../routes/ResultsPage/ResultsPage';
-
-// const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
-
-
+import LandingPage from '../../routes/LandingPage/LandingPage';
+import LoginPage from '../../routes/LoginPage/LoginPage';
+import SignupPage from '../../routes/SignupPage/SignupPage';
+import ParentHomepage from '../../routes/ParentHomepage/ParentHomepage';
+import ChildHomepage from '../../routes/ChildHomepage/ChildHomepage';
+import ExpeditionPage from '../../routes/ExpeditionPage/ExpeditionPage';
+import ActivityPage from '../../routes/ActivityPage/ActivityPage';
+import ResultsPage from '../../routes/ResultsPage/ResultsPage';
 
 
 function App() {
 
-  //  async function fetchData() {
-  //   const response = await fetch(url, {
-  //     mode: 'cors',
-  //     headers: {
-  //       'Access-Control-Allow-Origin':'*'
-  //     }
-  //   });
-  //   console.log(response);
-  //   const data = response.json();
-  //   console.log(data.body);
-  // }
-
-  // useEffect(() => {
-  //   fetchData();
-  // },[]);
-
-  // function handleClick(){
-  //   fetchData();
-  // }
-
   return (
     <div className="App">
-     <h1> Welcome to Noah's React Router! </h1>
-     {/* <button onClick = {handleClick}>GET DATA</button> */}
+     <h1> Welcome to Jungle Sums! </h1>
       <Routes>
         <Route path="/" element={<LandingPage/>} />
         <Route path="login" element={<LoginPage/>} />
