@@ -12,9 +12,6 @@ export default function ParentHomepage() {
           </p>
         </main>
         <nav>
-          <Link to="/">Home</Link>
-        </nav>
-        <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
         <Profile/>

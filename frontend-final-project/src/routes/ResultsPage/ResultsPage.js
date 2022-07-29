@@ -9,9 +9,6 @@ export default function ResultsPage() {
           <h2>welcome to the Results Page</h2>
         </main>
         <nav>
-          <Link to="/">Home</Link>
-        </nav>
-        <nav>
           <Link to="/child">Back to Child Homepage</Link>
         </nav>
         <nav>
