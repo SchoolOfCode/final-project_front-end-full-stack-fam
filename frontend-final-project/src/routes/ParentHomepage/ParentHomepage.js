@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Profile from '../../components/Login/Profile';
 import './ParentHomepage.css'
 
 export default function ParentHomepage() {
@@ -11,11 +12,9 @@ export default function ParentHomepage() {
           </p>
         </main>
         <nav>
-          <Link to="/">Home</Link>
-        </nav>
-        <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
+        <Profile/>
       </>
     );
   }
