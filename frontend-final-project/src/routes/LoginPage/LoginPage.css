@@ -1,0 +1,37 @@
+#container {
+  height: 700px;
+  width: 1550px;
+  overflow: hidden;
+  background-image: url(natural-background-with-realistic-leaves_52683-12799.jpeg);
+}
+
+#triangle-topleft {
+  position:relative;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid gray;
+  border-left: 100px solid transparent;
+}
+ 
+ 
+ 
+ 
+ /* .second {
+    margin: 0px;
+    padding: 0px;
+    width: 1520px;
+    height: 110vh;
+    background-image: linear-gradient(to bottom right, rgb(39, 125, 69) 50%, white 50%);
+  } */
+
+  .child {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+  }
+
+  .parent {
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+  }
