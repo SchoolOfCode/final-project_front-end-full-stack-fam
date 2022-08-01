@@ -10,10 +10,11 @@ import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
 
+
 function App() {
   return (
     <div className="App">
-      <h1> Welcome to Jungle Sums! </h1>
+      {/* <h1> Welcome to Jungle Sums! </h1> */}
       <LogoutButton/>
       <Routes>
         <Route path="/" element={<LandingPage />} />
