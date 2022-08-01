@@ -10,6 +10,7 @@ export default function ActivityPage() {
             No parents allowed!
           </p>
         </main>
+        
         <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
