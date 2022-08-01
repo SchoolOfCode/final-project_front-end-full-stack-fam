@@ -1,0 +1,41 @@
+body {background-color:#ffeab9;}
+
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.flexbox-item {
+    width: 90%;
+    font-family:-apple-system, 'Helvetica Neue', sans-serif;
+    background-color: #fff68e97;
+}
+
+.flexbox-item-1 {
+    height: 200px;
+    padding: 300px, 100px, 300px, 100px;
+    border: 5px solid #808080;
+}
+
+.flexbox-item-2 {
+    height: 200px;
+    padding: 300px, 100px, 300px, 100px;
+    border: 5px solid #808080;
+  
+}
+
+.flexbox-item-3 {
+    height: 200px;
+    padding: 300px, 100px, 300px, 100px;
+    border: 5px solid #808080;
+ 
+}
+
+.flexbox-item-4 {
+    height: 200px;
+    padding: 300px, 100px, 300px, 100px;
+    border: 5px solid #808080;
+    
+}
