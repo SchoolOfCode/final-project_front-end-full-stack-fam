@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './ActivityPage.css';
+import NumLine from './NumLine/NumLine';
 
 export default function ActivityPage() {
     
@@ -14,24 +15,25 @@ export default function ActivityPage() {
         </main> */}
         
   
-
+        <main className ="main">
         <div className='num-line-container'>
-            <section className='num-grid'>
-                <p>2</p>
-                <p>4</p>
-                <p>6</p>
-                <p>8</p>
-                <input type='text' maxLength={2}></input>
-                <p>12</p>
-                <p>14</p>
-                <p>16</p>
-                <p>18</p>
-                <p>20</p>
-            </section>
-            <button className='submit-button'>done!</button>
-    
-            <section className='num-line'></section>
+            {/* <section className='num-grid'>
+                <p className="num-text">2</p>
+                <p className="num-text">4</p>
+                <p className="num-text">6</p>
+                <p className="num-text">8</p>
+                <input className="num-input" type='text' onChange={handleChange} maxLength={2}></input>
+                <p className="num-text">12</p>
+                <p className="num-text">14</p>
+                <p className="num-text">16</p>
+                <p className="num-text">18</p>
+                <p className="num-text">20</p>
+              
+             
+            </section> */}
+            <NumLine/>
         </div>
+        </main>
 
 
 
