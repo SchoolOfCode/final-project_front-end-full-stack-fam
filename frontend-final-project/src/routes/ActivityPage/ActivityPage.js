@@ -2,15 +2,18 @@ import { Link } from 'react-router-dom';
 import './ActivityPage.css';
 
 export default function ActivityPage() {
-    return (
+    
+
+  return (
       <>
-        <main>
+        {/* <main>
           <h2>Welcome to the Activity Page</h2>
           <p>
             No parents allowed!
           </p>
-        </main>
+        </main> */}
         
+  
 
         <div className='num-line-container'>
             <section className='num-grid'>
@@ -18,13 +21,14 @@ export default function ActivityPage() {
                 <p>4</p>
                 <p>6</p>
                 <p>8</p>
-                <p>10</p>
+                <input type='text' maxLength={2}></input>
                 <p>12</p>
                 <p>14</p>
                 <p>16</p>
                 <p>18</p>
                 <p>20</p>
             </section>
+            <button className='submit-button'>done!</button>
     
             <section className='num-line'></section>
         </div>
@@ -33,7 +37,7 @@ export default function ActivityPage() {
 
 
 
-        <nav>
+        {/* <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
         <nav>
@@ -44,7 +48,7 @@ export default function ActivityPage() {
         </nav>
         <nav>
           <Link to="/results">To the results page!</Link>
-        </nav>
+        </nav> */}
       </>
     );
   }

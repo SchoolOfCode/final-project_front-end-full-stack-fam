@@ -1,5 +1,6 @@
 :root{
     background-color: antiquewhite;
+    
 
 }
 
@@ -16,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat( 10 , 1fr );
 
-    border-bottom: solid rgb(255, 207, 48) 5px;
+    border-bottom: solid rgb(233, 185, 30) 5px;
 
     width: 100%;
     height: 50%;
@@ -26,4 +27,19 @@
 p{
     text-align: center;
     margin: 0;
+    clip-path: circle();
+    background-color: #a0c93f;
+    font-size: 30px;
+}
+
+input{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    clip-path: circle();
+    background-color: #a0c93f;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: #2260c5;
 }
