@@ -4,9 +4,9 @@ import "./LoginPage.css";
 export default function LoginPage() {
   return (
     <>
-      <div id="container">
-  <div id="triangle-topleft"></div>
-</div>
+      <div class="second">
+      </div>
+
       <button class="child">
         {<Link to="/child">To Child Homepage</Link>}
       </button>
