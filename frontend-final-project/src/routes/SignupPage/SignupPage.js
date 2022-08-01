@@ -1,8 +1,6 @@
-//!!!NOTE!!!! OUR USE OF AUTH0 MAY HAVE MADE THIS PAGE REDUNTANT.
-//IM NOT DELETING IT JUST IN CASE, BUT ITS CURRENTLY NOT IN USE- NOAH
-
 import { Link } from "react-router-dom";
 import "./SignupPage.css";
+import SignupForm from "./SignupForm";
 
 export default function SignupPage() {
   return (
@@ -13,6 +11,9 @@ export default function SignupPage() {
       <nav>
         <Link to="/">Login Page</Link>
       </nav>
+      <div>
+        <SignupForm />
+      </div>
     </>
   );
 }
