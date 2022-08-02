@@ -6,24 +6,24 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
     setScore(0);
     setClicks(0);
 
-    // instructions for child activity can go here
+
 
 
 return(
          <main className= 'main'>
-            <div className= "wheel-thing"></div>
-            
-            <h1>Ready?</h1>
+            <div className= "high-score-display"></div>
+            {/* ACTIVITY INSRUCTIONS WILL GO HERE */}
+            <h3>Ready?</h3>
 
             <nav>
                 <Link to="/activity">
-                    <button className="start-button">Yea boi</button>
+                    <button className="start-button">Yes!</button>
                 </Link>
             </nav>
 
             <nav>
-                <Link to="/child">
-                <button className='back-button'>No</button>
+                <Link to="/expedition">
+                <button className='back-button'>Back to the Map</button>
                 </Link>
             </nav>
             
