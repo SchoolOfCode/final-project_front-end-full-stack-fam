@@ -20,9 +20,9 @@ function parentPassword() {
       <div id="container">
   
      
-      <button className="child">
-        {<Link to="/child">To Child Homepage</Link>}
-      </button>
+        <Link to="/child">
+          <button className="child">Child Homepage</button>
+        </Link>
 
       <button className="parent" onClick={parentPassword}>
        Parent Dashboard
