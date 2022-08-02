@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ReactComponent as MySvg} from '../../nighttime-jungle.svg';
 import './ActivityIntroPage.css'
 
 export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
@@ -10,6 +11,7 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
 
 return(
          <main className= 'main'>
+         <MySvg className='background-image-nighttime'/>
             <div className= "high-score-display"></div>
             {/* ACTIVITY INSRUCTIONS WILL GO HERE */}
             <h3>Ready?</h3>

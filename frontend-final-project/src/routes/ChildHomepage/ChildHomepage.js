@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom'
-import './ChildHomepage.css'
+import { Link } from 'react-router-dom';
+import { ReactComponent as MySvg} from '../../daytime-jungle.svg';
+import './ChildHomepage.css';
 
 export default function ChildHomepage() {
     return (
       <>
         <main>
+          <MySvg className='background-image-daytime'/>
           <h2>Welcome to the Child Homepage</h2>
           <p>
             No parents allowed!

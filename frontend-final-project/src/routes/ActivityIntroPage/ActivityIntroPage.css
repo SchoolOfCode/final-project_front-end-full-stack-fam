@@ -1,0 +1,8 @@
+.background-image-nighttime{
+    
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+
+}
