@@ -12,7 +12,7 @@ export default function ExpeditionPage() {
           <Link to="/child">Back to Child Homepage</Link>
         </nav>
         <nav>
-          <Link to="/activity">Go to Activity</Link>
+          <Link to="/activity-intro">Go to Activity</Link>
         </nav>
       </>
     );

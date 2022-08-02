@@ -14,7 +14,7 @@ export default function ResultsPage({score, clicks}) {
           <Link to="/expedition">Go back to the Map</Link>
         </nav>
         <nav>
-          <Link to="/activity">Try Activity Again</Link>
+          <Link to="/activity-intro">Try Activity Again</Link>
         </nav>
       </>
     );
