@@ -6,8 +6,7 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
     setScore(0);
     setClicks(0);
 
-
-
+// comment
 
 return(
          <main className= 'main'>
