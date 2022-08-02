@@ -34,7 +34,7 @@
     text-align: center;
     margin: 0;
     clip-path: circle();
-    background-color: #a0c93f;
+    background-color: rgb(233, 185, 30);
     font-size: 30px;
 }
 
@@ -43,7 +43,7 @@
     margin: 0;
     width: 100%;
     clip-path: circle();
-    background-color: #a0c93f;
+    background-color: rgb(233, 185, 30);
     border: none;
     outline: none;
     font-size: 30px;

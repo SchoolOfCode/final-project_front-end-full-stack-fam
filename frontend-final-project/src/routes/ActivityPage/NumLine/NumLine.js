@@ -4,26 +4,27 @@ import { useState, useEffect } from 'react';
 export default function NumLine(){
     
     const[answer, setAnswer] = useState("")
-    
+
     let array = ['2','4','6','8','10','12','14','16','18','20']
-
-    function setArray(){
     let ranNum = Math.floor(Math.random() * 10);
-    setAnswer(array[ranNum]);
-    console.log(`the answer is ${answer}`)
-    array[ranNum] = "input";
-    }
-
-    useEffect(()=> {setArray()})
     
+    //USE EFFECT GOES HERE TO PREVENT INFINITE LOOP AND MISMATCH OF ANSWER AND INPUT PLACEMENT!
+    useEffect(() => {
+        setAnswer(array[ranNum]);
+    }, [ranNum])
+    
+    console.log(`random number is ${array[ranNum]}`)
+    let newArray = [...array.slice(0, ranNum),"input",...array.slice(ranNum+1)]
+    console.log(newArray);
 
     function handleClick(){
         const input = document.querySelector(".num-input");
         console.log(input.value)
+        console.log(`answer is ${answer}`)
         const inputValue = (input.value);
         if(inputValue === answer){
           console.log('number matches!')
-          setArray();
+         
         }
         else if (inputValue !== answer){
             console.log('not quite, try again!')
@@ -33,7 +34,7 @@ export default function NumLine(){
 return (
     <div>
     <section className= "num-grid">
-        {array.map(function(item){
+        {newArray.map(function(item){
             if( item === "input" ){
                 return <input className="num-input" type='text' maxLength={2}></input>
             }
