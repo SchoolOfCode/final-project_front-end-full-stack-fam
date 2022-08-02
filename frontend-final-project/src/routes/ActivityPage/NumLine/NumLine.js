@@ -6,23 +6,27 @@ export default function NumLine(){
     const[answer, setAnswer] = useState("");
     const [prevAnsw, setPrevAnsw] = useState("");
 
+    //Assinging initial values
     let array = ['2','4','6','8','10','12','14','16','18','20']
     let ranNum = Math.floor(Math.random() * 10)
 
+    //This checks the number doesn't repeat two times in a row
     function checkRanNum() {
         console.log(`RAN NUM: ${ranNum} PREV ANSWER: ${prevAnsw}`)
         while (ranNum === prevAnsw){
             console.log("! ! REPEAT DETECTED: regenerating ranNum. . . ! !")
-        return ranNum = Math.floor(Math.random() * 10)
+        ranNum = Math.floor(Math.random() * 10)
         };
+        return ranNum
     }
-    
-    checkRanNum();
+
+        checkRanNum();
 
     
     //USE EFFECT GOES HERE TO PREVENT INFINITE LOOP AND MISMATCH OF ANSWER AND INPUT PLACEMENT!
     useEffect(() => {
         setAnswer(array[ranNum]);
+    // eslint-disable-next-line
     }, [ranNum])
     
     console.log(`random number is ${array[ranNum]}`)
