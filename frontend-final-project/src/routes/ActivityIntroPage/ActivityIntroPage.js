@@ -13,9 +13,17 @@ return(
          <main className= 'main'>
             <div className= "wheel-thing"></div>
             
+            <h1>Ready?</h1>
+
             <nav>
                 <Link to="/activity">
-                    <button className="start-button">Ready?</button>
+                    <button className="start-button">Yea boi</button>
+                </Link>
+            </nav>
+
+            <nav>
+                <Link to="/child">
+                <button className='back-button'>No</button>
                 </Link>
             </nav>
             
