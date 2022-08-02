@@ -2,13 +2,13 @@ import './NumLine.css'
 import { useState, useEffect } from 'react';
 import Timer from './CountdownTimer';
 
-export default function NumLine(){
+export default function NumLine({score, setScore, clicks, setClicks}){
     
     //SETTING OUR DEFAULT STATE
     const[answer, setAnswer] = useState("");
     const [prevAnsw, setPrevAnsw] = useState("");
-    const [score, setScore] = useState(0);
-    const [clicks, setClicks] = useState(0);
+    // const [score, setScore] = useState(0);
+    // const [clicks, setClicks] = useState(0);
 
     //ASSIGNING ARRAY
     let array = ['2','4','6','8','10','12','14','16','18','20']
@@ -38,7 +38,8 @@ export default function NumLine(){
     let newArray = [...array.slice(0, ranNum),"input",...array.slice(ranNum+1)]
     console.log(newArray);
 
-    //
+    //ON BUTTON CLICK, CHECKS IF THE INPUT FIELD MATCHES THE RIGHT ANSWER,
+    //IF THE SCORE IS CORRECT, THE SCORE IS INCREMENTED, AND THE ANSWER IS RESET
     function handleClick(){
         const input = document.querySelector(".num-input");
         console.log(input.value)
@@ -73,7 +74,6 @@ return (
     </section>
             <p className = "score">right answers: {score}</p>
             <p>number of questions: {clicks}</p>
-            <p>percentage correct:{Math.floor((score / clicks) * 100)}%</p>
             <Timer initialMinute = {0} initialSeconds = {60}/>
 
         <section className='button-container'>

@@ -2,14 +2,14 @@
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
 
-export default function ActivityPage() {
+export default function ActivityPage({score, setScore, clicks ,setClicks}) {
     
 
   return (
       <>
         <main className ="main">
         <div className='num-line-container'>
-            <NumLine/>
+            <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
         </div>
         </main>
         {/* <nav>

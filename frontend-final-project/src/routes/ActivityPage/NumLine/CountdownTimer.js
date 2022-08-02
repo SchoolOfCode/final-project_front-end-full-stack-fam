@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 const Timer = (props) => {
+    const navigate = useNavigate();
     const {initialMinute = 0,initialSeconds = 0} = props;
     const [ minutes, setMinutes ] = useState(initialMinute);
     const [seconds, setSeconds ] =  useState(initialSeconds);
@@ -13,6 +15,7 @@ const Timer = (props) => {
             if (seconds === 0) {
                 if (minutes === 0) {
                     clearInterval(myInterval)
+                    navigate("/results")
                 } else {
                     setMinutes(minutes - 1);
                     setSeconds(59);
@@ -23,6 +26,8 @@ const Timer = (props) => {
             clearInterval(myInterval);
           };
     });
+
+
 
     return (
         <div>
