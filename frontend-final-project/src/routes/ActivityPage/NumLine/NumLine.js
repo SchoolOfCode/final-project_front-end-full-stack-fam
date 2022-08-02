@@ -6,7 +6,8 @@ export default function NumLine(){
     const[answer, setAnswer] = useState("")
 
     let array = ['2','4','6','8','10','12','14','16','18','20']
-    let ranNum = Math.floor(Math.random() * 10);
+    let ranNum = Math.floor(Math.random() * 10)
+
     
     //USE EFFECT GOES HERE TO PREVENT INFINITE LOOP AND MISMATCH OF ANSWER AND INPUT PLACEMENT!
     useEffect(() => {
@@ -23,8 +24,10 @@ export default function NumLine(){
         console.log(`answer is ${answer}`)
         const inputValue = (input.value);
         if(inputValue === answer){
-          console.log('number matches!')
-         
+          console.log('number matches!');
+          // I haven't set the state for this
+            setPreviousNum(answer)
+            setAnswer('')
         }
         else if (inputValue !== answer){
             console.log('not quite, try again!')
