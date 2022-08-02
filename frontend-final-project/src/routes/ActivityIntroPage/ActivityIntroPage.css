@@ -1,8 +1,22 @@
-.background-image-nighttime{
-    
-    display: flex;
-    height: 100vh;
-    position: absolute;
+.activity-intro-background-image-daytime {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
     z-index: -1;
+    animation: none;
+}
 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

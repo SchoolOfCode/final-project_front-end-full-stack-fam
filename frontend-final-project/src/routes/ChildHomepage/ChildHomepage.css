@@ -1,9 +1,26 @@
-.background-image-daytime {
-
-    display: flex;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-
+.page-container{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
 }
+
+.child-homepage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.background-image-daytime {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+
+
 
