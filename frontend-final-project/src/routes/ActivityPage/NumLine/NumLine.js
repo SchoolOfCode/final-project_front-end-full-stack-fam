@@ -3,10 +3,21 @@ import { useState, useEffect } from 'react';
 
 export default function NumLine(){
     
-    const[answer, setAnswer] = useState("")
+    const[answer, setAnswer] = useState("");
+    const [prevAnsw, setPrevAnsw] = useState("");
 
     let array = ['2','4','6','8','10','12','14','16','18','20']
     let ranNum = Math.floor(Math.random() * 10)
+
+    function checkRanNum() {
+        console.log(`RAN NUM: ${ranNum} PREV ANSWER: ${prevAnsw}`)
+        while (ranNum === prevAnsw){
+            console.log("! ! REPEAT DETECTED: regenerating ranNum. . . ! !")
+        return ranNum = Math.floor(Math.random() * 10)
+        };
+    }
+    
+    checkRanNum();
 
     
     //USE EFFECT GOES HERE TO PREVENT INFINITE LOOP AND MISMATCH OF ANSWER AND INPUT PLACEMENT!
@@ -26,7 +37,7 @@ export default function NumLine(){
         if(inputValue === answer){
           console.log('number matches!');
           // I haven't set the state for this
-            setPreviousNum(answer)
+            setPrevAnsw(ranNum)
             setAnswer('')
         }
         else if (inputValue !== answer){
