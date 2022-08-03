@@ -17,20 +17,20 @@ return(
             {/* ACTIVITY INSRUCTIONS WILL GO HERE */}
             
             <h3>
-                Complete your next activity before night time falls! <br/>
+                Collect as many bananas as you can before night time! <br/>
                 Are you ready?
             </h3>
 
             <section className = "button-container">
                 <nav>
                     <Link to="/activity">
-                        <button className="start-button">Let's Go!</button>
+                        <button className="start-button">YES</button>
                     </Link>
                 </nav>
 
                 <nav>
                     <Link to="/expedition">
-                    <button className='back-button'>Back to the Map</button>
+                    <button className='back-button'>BACK TO MAP</button>
                     </Link>
                 </nav>
             </section>
