@@ -23,11 +23,7 @@ function App() {
   return (
     <div className="App">
       {/* <h1> Welcome to Jungle Sums! </h1> */}
-      
-      <div id="button">
       {/* <LoginButton /> */}
-      <LogoutButton />
-      </div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage />} />
