@@ -1,8 +1,59 @@
 .App {
-  text-align: center;
+  background-image: url(SplitEditWithTitle.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+min-width: 100vh;
+min-height: 100vh;
+
 }
 
-.App-logo {
+.button{
+  background-color: #4CAF50;
+  position: relative;
+  top: 348px;
+  right: -670px;
+  text-align: center;
+  border: none;
+  color: white;
+  padding: -10px 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+  
+}
+
+.button{
+  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+}
+
+.button:hover {
+  box-shadow: 0px 3px 14px #24c64f;
+}
+/* #card {
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 410px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+} */
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +86,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
