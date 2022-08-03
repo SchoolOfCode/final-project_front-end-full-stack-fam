@@ -16,7 +16,7 @@ export default function LandingPage() {
   } else {
     return (
       <div className= "landing-page">
-        <h1 className = {"app-heading " + "animate__animated " + "animate__swing " + "animate__infinite " + "animate__slow"}>WELCOME TO JUNGLE SUMS!</h1>
+        <h1 className = {"app-heading " + "animate__animated " + "animate__swing " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>WELCOME TO JUNGLE SUMS!</h1>
         <LoginButton />
         <LogoutButton />
         {/* <nav>
