@@ -12,10 +12,13 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+
+  .app-heading{
+    font-family: "Mochiy Pop P One", sans-serif;
     
-  min-width: 100vh;
-  min-height: 100vh;
-  
   }
 
 
