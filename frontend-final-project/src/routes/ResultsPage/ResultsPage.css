@@ -1,0 +1,40 @@
+.main{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.results-background-image-nighttime {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    animation: none;
+}
+
+
+.heading {
+
+    color:aqua;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.h3-score {
+
+    font-family: 'Quicksand', sans-serif;
+    color:aqua
+
+
+}
+
+.h3-percentage {
+
+    font-family: 'Quicksand', sans-serif;
+    color:aqua
+
+}

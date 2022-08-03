@@ -1,12 +1,16 @@
 // import { Link } from 'react-router-dom';
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
+import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
+import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 
 export default function ActivityPage({score, setScore, clicks ,setClicks}) {
     
 
   return (
       <>
+        <MySvgDay className='activity-background-image-daytime'/>
+        <MySvgNight className='activity-background-image-nighttime'/>
         <main className ="main">
         <div className='num-line-container'>
             <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
