@@ -16,6 +16,7 @@ export default function LandingPage() {
   } else {
     return (
       <div className= "landing-page">
+        <h1 className = "app-heading">Welcome To Jungle Sums!</h1>
         <LoginButton />
         <LogoutButton />
         {/* <nav>
