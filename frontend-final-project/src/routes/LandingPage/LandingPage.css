@@ -14,11 +14,20 @@
     background-repeat: no-repeat;
     min-width: 100vh;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .app-heading{
     font-family: "Mochiy Pop P One", sans-serif;
-    
+    margin: 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(249, 189, 37);
   }
 
 

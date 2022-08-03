@@ -3,8 +3,6 @@
 .button{
   background-color: #4CAF50;
   position: relative;
-  top: 348px;
-  right: -670px;
   text-align: center;
   border: none;
   color: white;
@@ -14,8 +12,6 @@
   font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  
-  
 }
 
 .button{
