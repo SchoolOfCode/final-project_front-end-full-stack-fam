@@ -16,9 +16,9 @@ export default function LandingPage() {
       <>
         <LoginButton />
         <LogoutButton />
-        <nav>
+        {/* <nav>
           <Link to="/signup">Sign Up</Link>
-        </nav>
+        </nav> */}
       </>
     );
   }

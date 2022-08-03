@@ -9,13 +9,18 @@ import ExpeditionPage from "../../routes/ExpeditionPage/ExpeditionPage";
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
+import LoginButton from "../Login/LoginButton";
 
 
 function App() {
   return (
     <div className="App">
       {/* <h1> Welcome to Jungle Sums! </h1> */}
-      <LogoutButton/>
+      
+      <div id="button">
+      {/* <LoginButton /> */}
+      <LogoutButton />
+      </div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage />} />
