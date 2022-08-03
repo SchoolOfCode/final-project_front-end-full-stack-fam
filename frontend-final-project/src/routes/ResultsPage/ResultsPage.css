@@ -15,3 +15,26 @@
     z-index: -1;
     animation: none;
 }
+
+
+.heading {
+
+    color:aqua;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.h3-score {
+
+    font-family: 'Quicksand', sans-serif;
+    color:aqua
+
+
+}
+
+.h3-percentage {
+
+    font-family: 'Quicksand', sans-serif;
+    color:aqua
+
+}
