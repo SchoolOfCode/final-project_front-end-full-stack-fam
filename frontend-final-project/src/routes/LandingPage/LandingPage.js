@@ -4,10 +4,12 @@ import LogoutButton from "../../components/Login/LogoutButton";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+ import "./LandingPage.css";
 
 export default function LandingPage() {
   const navigate = useNavigate();
   const { isAuthenticated } = useAuth0();
+ 
 
   if (isAuthenticated) {
     navigate("/login");
@@ -16,9 +18,9 @@ export default function LandingPage() {
       <>
         <LoginButton />
         <LogoutButton />
-        <nav>
+        {/* <nav>
           <Link to="/signup">Sign Up</Link>
-        </nav>
+        </nav> */}
       </>
     );
   }
