@@ -10,6 +10,11 @@
   display: inline-block;
   font-size: 25px;
   cursor: pointer;
+  
+  
+}
+
+.button{
   background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
   border-radius: 21px;
   font-family: "Raleway SemiBold", sans-serif;
@@ -26,4 +31,45 @@
   box-shadow: 0px 3px 14px #24c64f;
 }
 
+
+/* #card {
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 410px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+} */
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}*/
+
+:root{
+
+  /*BUTTON VARIABLES*/
+
+  /*button background color*/
+  --btn-bg-clr: #EDBD48;
+
+  /*button text color*/
+  --btn-txt-clr:  #5F061E;
+
+}
+
+
+button{
+  background-color: var(--btn-bg-clr);
+  color: var(--btn-txt-clr);
+  border: none;
+  padding: 1%;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #5f061e76;
+}
+
+button:hover{
+  background-color: var(--btn-txt-clr);
+  color: var(--btn-bg-clr);
+}
 
