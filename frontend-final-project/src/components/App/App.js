@@ -7,10 +7,11 @@ import SignupPage from "../../routes/SignupPage/SignupPage";
 import ParentHomepage from "../../routes/ParentHomepage/ParentHomepage";
 import ChildHomepage from "../../routes/ChildHomepage/ChildHomepage";
 import ExpeditionPage from "../../routes/ExpeditionPage/ExpeditionPage";
+import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage"
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
-import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage";
+import "@fontsource/mochiy-pop-p-one"
 
 
 
@@ -22,11 +23,7 @@ function App() {
   return (
     <div className="App">
       {/* <h1> Welcome to Jungle Sums! </h1> */}
-      
-      <div id="button">
       {/* <LoginButton /> */}
-      <LogoutButton />
-      </div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage />} />

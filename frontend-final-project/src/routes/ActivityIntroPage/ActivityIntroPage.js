@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import { ReactComponent as MySvg} from '../../daytime-jungle.svg';
 import './ActivityIntroPage.css'
 
@@ -10,7 +11,8 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
 // not a comment
 
 return(
-         <>
+        <>   
+        <LogoutButton/>
          <MySvg className='activity-intro-background-image-daytime'/>
          <main className= 'main'>
 
@@ -36,6 +38,6 @@ return(
             </section>
             
         </main>
-    </>
+        </> 
 )
 }

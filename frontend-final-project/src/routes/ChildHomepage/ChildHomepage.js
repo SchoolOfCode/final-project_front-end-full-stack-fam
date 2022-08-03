@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import LogoutButton from '../../components/Login/LogoutButton';
+import './ChildHomepage.css'
 import { ReactComponent as MySvg} from '../../daytime-jungle.svg';
-import './ChildHomepage.css';
 
 export default function ChildHomepage() {
-    return (
+    return <>
+      <LogoutButton/>
       <div className= "page-container">
         <MySvg className='background-image-daytime'/>
         <main className= "child-homepage">
@@ -25,5 +27,5 @@ export default function ChildHomepage() {
         </main>
 
       </div>
-    );
+      </>
   }

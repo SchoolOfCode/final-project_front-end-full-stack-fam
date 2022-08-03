@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
 import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
@@ -9,6 +10,7 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
 
   return (
       <>
+        <LogoutButton/>
         <MySvgDay className='activity-background-image-daytime'/>
         <MySvgNight className='activity-background-image-nighttime'/>
         <main className ="main">

@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ExpeditionPage.css'
 
 export default function ExpeditionPage() {
 
     return (
       <>
+        <LogoutButton/>
         <main>
           <h2>Welcome to Expedition Page</h2>
         </main>

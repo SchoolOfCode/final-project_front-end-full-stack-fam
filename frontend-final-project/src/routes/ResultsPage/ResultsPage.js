@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ResultsPage.css';
 import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import CircularDeterminate from '../CircularDeterminate';
@@ -27,11 +28,12 @@ export default function ResultsPage({score, clicks}) {
       theMessage = messageEncouragement.lowScore;
     };
 
-    return (
-      <>
+    return <>
+        <LogoutButton/>
+        <main className = "main">
+          <h2>welcome to the Results Page</h2>
        <MySvgNight className = 'results-background-image-nighttime'/>
 
-        <main className = "main">
           <h2 className='heading'>Well Done!</h2>
         <h3 className='h3-score'>Your score is {score}!</h3>
         <h3 className='h3-percentage'>You got {scorePercent}% correct</h3>
@@ -49,5 +51,4 @@ export default function ResultsPage({score, clicks}) {
         </nav>
         </main>
       </>
-    );
   }
