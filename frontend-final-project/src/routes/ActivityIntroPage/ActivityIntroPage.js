@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ActivityIntroPage.css'
 
 export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
@@ -10,6 +11,8 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
 
 
 return(
+        <>   
+        <LogoutButton/>
          <main className= 'main'>
             <div className= "high-score-display"></div>
             {/* ACTIVITY INSRUCTIONS WILL GO HERE */}
@@ -28,6 +31,7 @@ return(
             </nav>
             
         </main>
+        </> 
 
 )
 }

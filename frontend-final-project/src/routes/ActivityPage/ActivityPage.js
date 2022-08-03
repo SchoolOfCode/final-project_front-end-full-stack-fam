@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
 
@@ -7,6 +8,7 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
 
   return (
       <>
+        <LogoutButton/>
         <main className ="main">
         <div className='num-line-container'>
             <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>

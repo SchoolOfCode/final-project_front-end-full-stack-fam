@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ResultsPage.css';
 
 export default function ResultsPage({score, clicks}) {
 
     return (
       <>
+        <LogoutButton/>
         <main>
           <h2>welcome to the Results Page</h2>
         </main>

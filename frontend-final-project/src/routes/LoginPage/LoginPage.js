@@ -21,8 +21,7 @@ function parentPassword() {
     <>
       <div id="container">
       <LogoutButton />
-  
-     
+
         <Link to="/child">
           <button className="child">Child Homepage</button>
         </Link>

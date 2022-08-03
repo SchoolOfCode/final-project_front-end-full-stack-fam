@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ChildHomepage.css'
 
 export default function ChildHomepage() {
     return (
       <>
+        <LogoutButton/>
         <main>
           <h2>Welcome to the Child Homepage</h2>
           <p>
