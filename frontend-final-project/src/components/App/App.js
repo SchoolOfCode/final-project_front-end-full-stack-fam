@@ -7,6 +7,7 @@ import SignupPage from "../../routes/SignupPage/SignupPage";
 import ParentHomepage from "../../routes/ParentHomepage/ParentHomepage";
 import ChildHomepage from "../../routes/ChildHomepage/ChildHomepage";
 import ExpeditionPage from "../../routes/ExpeditionPage/ExpeditionPage";
+import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage"
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";

@@ -15,13 +15,13 @@ export default function LandingPage() {
     navigate("/login");
   } else {
     return (
-      <>
+      <div className= "landing-page">
         <LoginButton />
         <LogoutButton />
         {/* <nav>
           <Link to="/signup">Sign Up</Link>
         </nav> */}
-      </>
+      </div>
     );
   }
 }
