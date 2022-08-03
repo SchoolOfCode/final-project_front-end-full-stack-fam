@@ -7,7 +7,7 @@ import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 
 export default function ActivityPage({score, setScore, clicks ,setClicks}) {
     
-
+// comment
   return (
       <>
         <LogoutButton/>
