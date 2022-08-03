@@ -10,6 +10,7 @@ import ExpeditionPage from "../../routes/ExpeditionPage/ExpeditionPage";
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
+import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage";
 
 
 

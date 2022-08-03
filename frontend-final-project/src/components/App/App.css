@@ -29,7 +29,7 @@ min-height: 100vh;
 }
 
 
-:root{
+
 
 .button{
   background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
@@ -59,8 +59,9 @@ min-height: 100vh;
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+}*/
 
+:root{
 
   /*BUTTON VARIABLES*/
 
