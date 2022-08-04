@@ -15,16 +15,17 @@ export default function LandingPage() {
     navigate("/login");
   } else {
     return (
-      <div className= "landing-page">
-        <h1 className = {"app-heading " + "animate__animated " + "animate__swing " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>WELCOME TO JUNGLE SUMS!</h1>
-        <section className= "button-container">
-        <LoginButton />
-        <LogoutButton />
-        </section>
-        {/* <nav>
-          <Link to="/signup">Sign Up</Link>
-        </nav> */}
-      </div>
-    );
+      <>
+        <div className = 'background-image'>
+        </div>
+        <div className= "landing-page">
+          <h1 className = {"app-heading " + "animate__animated " + "animate__rubberBand " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>WELCOME TO JUNGLE SUMS!</h1>
+          <section className= "button-container">
+          <LoginButton />
+          <LogoutButton />
+          </section>
+        </div>
+      </>
+    )
   }
 }

@@ -1,34 +1,27 @@
 
 .button{
-  background-color: #4CAF50;
-  position: relative;
-  text-align: center;
-  border: none;
-  color: white;
-  padding: -10px 5px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  cursor: pointer;
-  
-  
-}
-
-.button{
-  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
-  border-radius: 21px;
+  background: -webkit-linear-gradient(right, rgb(168, 94, 25), rgb(249, 189, 37));
+  box-shadow: 0px 1px 8px rgb(249, 147, 37);
   font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid rgb(249, 189, 37);
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
   transition: 0.25s;
-  width: 153px;
-  box-shadow: 0px 1px 8px #24c64f;
+  width: 10vw;
+  height: 8vh;
   margin: 0;
   margin-top: 0.5%;
   margin-left: 0.5%;
 }
 
 .button:hover {
-  box-shadow: 0px 3px 14px #24c64f;
+  box-shadow: 0px 3px 14px rgb(249, 147, 37);
+  color: darkred
 }
 
 
