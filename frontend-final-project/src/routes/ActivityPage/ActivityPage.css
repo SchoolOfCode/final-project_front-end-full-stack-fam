@@ -44,7 +44,7 @@
 
 
 
-.main{
+.focus-area{
     width:100vw;
     height:100vh;
     display: flex;
@@ -80,7 +80,6 @@
     display: grid;
     grid-template-columns: repeat( 10 , 1fr );
     margin: 0;
-    border-bottom: solid rgb(233, 185, 30) 5px;
     width: 100%;
     height: 50%;
     align-items: center;

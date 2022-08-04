@@ -11,21 +11,20 @@ const theme = createTheme({ palette: {
 
 
 
-export default function CircularDeterminate() {
+export default function CircularDeterminate({percentageState}) {
 
   const [progress, setProgress] = React.useState(0);
 
-    const percentage = 70;
 
   React.useEffect(() => {
         const timer = setTimeout(() => {
-        setProgress((prevProgress) => (prevProgress >= percentage ? 0 : prevProgress + percentage));
+        setProgress((prevProgress) => (prevProgress >= percentageState ? 0 : prevProgress + percentageState));
         }, 600);
 
         return () => {
         clearTimeout(timer);
         };
-    }, []);
+    }, [percentageState]);
 
 
 

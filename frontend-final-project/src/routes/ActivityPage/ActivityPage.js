@@ -19,12 +19,13 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
           <h2 className='lets-go'>LET'S GO!</h2>
         </div>
 
-        <main className ="main">
+        <main className ="focus-area">
           <div className='the-card-div'>
-            <div className='num-line-container'>
-              <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
+            <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
+              <div className='num-line-container'>
                 <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
-            </div>
+                
+              </div>
           </div>
         </main>
         {/* <nav>

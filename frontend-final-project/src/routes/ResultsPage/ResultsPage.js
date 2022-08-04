@@ -4,8 +4,11 @@ import './ResultsPage.css';
 import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import CircularDeterminate from '../CircularDeterminate';
 
-export default function ResultsPage({score, clicks}) {
+
+export default function ResultsPage({score, clicks, setPercentageState , percentageState}) {
   
+
+
   let theMessage = "";
   const messageEncouragement = {
     
@@ -15,11 +18,24 @@ export default function ResultsPage({score, clicks}) {
 
   };
 
-    let scorePercent = Math.floor((score / clicks) * 100)
+
+// leave these calculation here
+// set this as state one level higher
+// pass it down to this comp. and to circulardeterminate
+
+
+// calculating the percentage of correct answers (scorePercent) from states: score & clicks
+  let scorePercent = Math.floor((score / clicks) * 100)
     if (isNaN(scorePercent)) {
       scorePercent = 0;
     };
+  
+// attempting to set this state (percentageState) to match the above calculated scorePercent:
+  setPercentageState(scorePercent);
 
+
+
+// matching messages to calculated percentages
     if (scorePercent >= 80) {
       theMessage = messageEncouragement.topScore;
     } else if (scorePercent >= 40 && scorePercent <= 79 ) {
@@ -36,7 +52,7 @@ export default function ResultsPage({score, clicks}) {
         <h3 className='h3-score'>Your score is {score}!</h3>
         <h3 className='h3-percentage'>You got {scorePercent}% correct</h3>
         <h3 className='h3-encouragement'>{theMessage}</h3>
-        <CircularDeterminate score={score}/>
+        <CircularDeterminate score={score} percentageState={percentageState}/>
 
         <div className='button-container'>
           <nav>
