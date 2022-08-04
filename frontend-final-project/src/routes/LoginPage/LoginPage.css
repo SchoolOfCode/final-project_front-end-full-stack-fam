@@ -1,28 +1,46 @@
 #container{
- 
   /* height:  2158px;
   width: 1406px; */
-  background-image: url(SplitEditWithTitle.jpg);
-  background-size: contain;
+  background-image: url(./Split-Background.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-min-width: 100vh;
-min-height: 100vh;
-
-  
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
+.child-welcome{
+  color:#EDBD48;
+  font-size: 2.4vw;
+  text-shadow: 2px 2px 0px #5F061E;
+  margin-bottom: 2%;
+}
 
+.parent-welcome{
+  text-align: center;
+  color:#5F061E;
+  font-size: 2.4vw;
+  text-shadow: 2px 2px 0px #EDBD48;
+  margin-bottom: 2%;
+}
 
-  .child {
+.child-text-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    top: 300px;
-    left: 300px;
-  }
+    top: 25%;
+    left: 10%;
+    max-width: 45vw;
+}
 
-  .parent {
+.parent-text-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    top: 500px;
-    left: 1100px;
-  }
+    bottom: 25%;
+    right: 10%;
+    max-width: 45vw;
+}
