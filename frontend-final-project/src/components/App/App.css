@@ -59,6 +59,7 @@ button{
   transition: 0.3s;
   border: 2px solid #5f061e76;
   cursor: pointer;
+  padding: 1%;
 }
 
 button:hover{

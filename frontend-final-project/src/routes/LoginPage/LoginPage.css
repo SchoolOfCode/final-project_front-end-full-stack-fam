@@ -11,6 +11,7 @@
 }
 
 .child-welcome{
+  text-align: center;
   color:#EDBD48;
   font-size: 2.4vw;
   text-shadow: 2px 2px 0px #5F061E;
@@ -43,4 +44,14 @@
     bottom: 25%;
     right: 10%;
     max-width: 45vw;
+}
+
+.parent-button{
+  padding: 1%;
+  white-space: nowrap;
+}
+
+.child-button{
+  padding: 10%;
+  white-space: nowrap;
 }

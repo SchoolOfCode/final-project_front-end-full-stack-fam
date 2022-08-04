@@ -23,19 +23,29 @@ function parentPassword() {
   return (
     <>
       <div id="container">
-      <LogoutButton />
+        <LogoutButton />
         <section className = 'child-text-button-container'>
-        <h2 className = {"child-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}> Welcome, {childName}! Ready for adventures? </h2>
-        <Link to="/child">
-          <button className="child">Child Homepage</button>
-        </Link>
+          <h2 className = {"child-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
+          Welcome, {childName}!
+          <br/> 
+          Ready for another adventure? 
+          </h2>
+          <Link to="/child">
+            <button className="child-button">
+              Let's Go!
+            </button>
+          </Link>
         </section>
         <section className = 'parent-text-button-container'>
-        <h2 className = {"parent-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"} > Welcome, {parentName}! <br/> Log in to see {childName}'s achievements.</h2>
-        <button className="parent" onClick={parentPassword}>
-        Parent Dashboard
-        </button>
-      </section>
+          <h2 className = {"parent-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
+            Welcome, {parentName}! 
+            <br/> 
+            Log in to see {childName}'s achievements.
+          </h2>
+          <button className="parent-button" onClick={parentPassword}>
+            Parent Dashboard
+          </button>
+        </section>
       </div>
     </>
   );
