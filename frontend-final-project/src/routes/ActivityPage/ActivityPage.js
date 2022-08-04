@@ -13,10 +13,19 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
         <LogoutButton/>
         <MySvgDay className='activity-background-image-daytime'/>
         <MySvgNight className='activity-background-image-nighttime'/>
-        <main className ="main">
-        <div className='num-line-container'>
-            <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
+
+        <div className='text-container'>
+          <h1 className='the-activity-heading'>Number Line</h1>
+          <h2 className='lets-go'>LET'S GO!</h2>
         </div>
+
+        <main className ="main">
+          <div className='the-card-div'>
+            <div className='num-line-container'>
+              <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
+                <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
+            </div>
+          </div>
         </main>
         {/* <nav>
           <Link to="/login">Back to Log In</Link>

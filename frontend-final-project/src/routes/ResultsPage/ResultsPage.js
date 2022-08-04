@@ -31,24 +31,25 @@ export default function ResultsPage({score, clicks}) {
     return <>
         <LogoutButton/>
         <main className = "main">
-          <h2>welcome to the Results Page</h2>
        <MySvgNight className = 'results-background-image-nighttime'/>
-
-          <h2 className='heading'>Well Done!</h2>
+          <h1 className='heading'>Well Done!</h1>
         <h3 className='h3-score'>Your score is {score}!</h3>
         <h3 className='h3-percentage'>You got {scorePercent}% correct</h3>
         <h3 className='h3-encouragement'>{theMessage}</h3>
         <CircularDeterminate score={score}/>
-        <nav>
-          <Link to="/expedition">
-            <button className = "map-button">Back to Map</button>
-          </Link>
-        </nav>
-        <nav>
-          <Link to="/activity-intro">
-            <button className = "retry-button">Try Again</button>
-          </Link>
-        </nav>
+
+        <div className='button-container'>
+          <nav>
+            <Link to="/expedition">
+              <button className = "map-button">Back to Map</button>
+            </Link>
+          </nav>
+          <nav>
+            <Link to="/activity-intro">
+              <button className = "retry-button">Try Again</button>
+            </Link>
+          </nav>
+        </div>
         </main>
       </>
   }
