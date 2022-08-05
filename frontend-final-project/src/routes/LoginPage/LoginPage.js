@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./LoginPage.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import LogoutButton from "../../components/Login/LogoutButton";
+
 
 export default function LoginPage() {
   const [password, setPassword] = useState("1234");
@@ -18,8 +20,8 @@ function parentPassword() {
   return (
     <>
       <div id="container">
-  
-     
+      <LogoutButton />
+
         <Link to="/child">
           <button className="child">Child Homepage</button>
         </Link>

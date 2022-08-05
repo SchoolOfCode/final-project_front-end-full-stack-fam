@@ -67,3 +67,31 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.activity-background-image-daytime {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+
+.activity-background-image-nighttime {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    animation: day-to-night 60s linear 1;
+}
+
+@keyframes day-to-night{
+    0%{
+        opacity:0%
+    }
+    100%{
+        opacity:100%
+    }
+}
