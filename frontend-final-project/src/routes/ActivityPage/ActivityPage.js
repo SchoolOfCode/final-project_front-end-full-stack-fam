@@ -11,7 +11,7 @@ export default function ActivityPage() {
           </p>
         </main>
         <nav>
-          <Link to="/">Home</Link>
+          <button><Link to="/">Home</Link></button>
         </nav>
         <nav>
           <Link to="/login">Back to Log In</Link>

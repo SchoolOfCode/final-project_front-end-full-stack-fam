@@ -1,0 +1,105 @@
+
+.woodStop1{
+    position:absolute; top:55%; left:17%;
+    max-width: 5%;
+    
+}
+
+.woodStopButton1{
+    position:absolute; top:53%; left:16%;
+    cursor: pointer;
+    border: 40px solid transparent;
+    border-radius: 40px;
+    background-color: transparent;
+    color:transparent;
+}
+
+
+
+
+
+
+
+
+.woodStop2{
+    position:absolute;
+    max-width: 5%;
+    left:38%;
+    top:38%;
+}
+
+.woodStopButton2{
+    position: absolute;
+    top: 37%;
+    left: 36%;
+    cursor: pointer;
+    border: 40px solid transparent;
+    border-radius: 40px;
+    background-color: transparent;
+    color:transparent;
+}
+
+
+
+
+.woodStop3{
+    position:absolute;
+    max-width: 5%;
+    top:48%;
+    left:62%;
+}
+
+.woodStopButton3{
+    position: absolute;
+    top: 85%;
+    left: 37%;
+    cursor: pointer;
+    border: 40px solid transparent;
+    border-radius: 40px;
+    background-color: transparent;
+    color:transparent;
+}
+
+
+
+
+
+
+.woodStop4{
+    position:absolute;
+    max-width: 5%;
+    left:38%;
+    top:88%;
+}
+
+.woodStopButton4{
+    position: absolute;
+    top: 47%;
+    left: 60.5%;
+    cursor: pointer;
+    border: 40px solid transparent;
+    border-radius: 40px;
+    background-color: transparent;
+    color:transparent;
+}
+
+
+
+
+.woodStop5{
+    position:absolute;
+    max-width: 5%;
+    left:82%;
+    top:81%;
+}
+
+.woodStopButton5{
+    position: absolute;
+    top: 80%;
+    left: 79%;
+    cursor: pointer;
+    border: 40px solid transparent;
+    border-radius: 40px;
+    background-color: transparent;
+    color:transparent;
+}
