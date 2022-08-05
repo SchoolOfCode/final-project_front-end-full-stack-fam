@@ -4,12 +4,13 @@ import { useState } from 'react'
 import LandingPage from "../../routes/LandingPage/LandingPage";
 import LoginPage from "../../routes/LoginPage/LoginPage";
 import SignupPage from "../../routes/SignupPage/SignupPage";
-import ParentHomepage from "../../routes/ParentHomepage/ParentHomepage";
 import ChildHomepage from "../../routes/ChildHomepage/ChildHomepage";
 import ExpeditionPage from "../../routes/ExpeditionPage/ExpeditionPage";
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
+import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
+import ParentHomepage from "../../routes/ParentHomepage/ParentHomepage";
 
 
 
