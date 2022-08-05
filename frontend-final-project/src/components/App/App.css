@@ -1,3 +1,4 @@
+
 :root{
 
   /*BUTTON VARIABLES*/
@@ -7,6 +8,17 @@
 
   /*button text color*/
   --btn-txt-clr:  #5F061E;
+}
+
+.App {
+  /* background-image: url(SplitEditWithTitle.jpg); */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+min-width: 100vh;
+min-height: 100vh;
 
 }
 
