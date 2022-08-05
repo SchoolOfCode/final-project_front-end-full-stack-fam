@@ -12,14 +12,13 @@ export default function ChildHomepage() {
   const { isAuthenticated } = useAuth0();
 
   const expOneProgress = 89;
-  const expTwoProgress = 75;
-  const expThreeProgress = 60;
+  const expTwoProgress = 100;
+  const expThreeProgress = 100;
   
   //If the user is not logged in, automatically redirects back to landing page.
   if(!isAuthenticated) {
     navigate("/");
   }
-
 
     return <>
       <div className= "page-container">
@@ -33,26 +32,32 @@ export default function ChildHomepage() {
               </h2>
             </section>
             <section className="expedition-container">
+              <button className = "expedition-button">
                 <section className= "expedition-card">
                   <CircularProgressWithLabel size= '10vw' variant="determinate" value={expOneProgress} style = {{ margin: '0', color: 'rgb(249, 189, 37)', position:'relative'}} />
                   <div className= "percentage-display">{expOneProgress}%</div>
                 </section>
+              </button>
+              <button className = {"expedition-button " + "locked"} >
                 <section className= "expedition-card">
                   <CircularProgressWithLabel size= '10vw' variant="determinate" value={expTwoProgress} style = {{ margin: '0', color: 'rgb(249, 189, 37)', position:'relative'}} />
-                  <div className= "percentage-display">{expTwoProgress}%</div>
+                  <div className= "percentage-display">locked</div>
                 </section>
+              </button>
+              <button className = {"expedition-button " + "locked"}>
                 <section className= "expedition-card">
                   <CircularProgressWithLabel size= '10vw' variant="determinate" value={expThreeProgress} style = {{ margin: '0', color: 'rgb(249, 189, 37)', position:'relative'}} />
-                  <div className= "percentage-display">{expThreeProgress}%</div>
+                  <div className= "percentage-display">locked</div>
                 </section>
+              </button>
             </section>
-            <section className= 'button-container'>
-              <nav>
+            <section className= 'expedition-button-container'>
+              <nav className= "nav">
                 <Link to="/login">
                   <button className='back-button'>Back to Login</button>
                 </Link>
               </nav>
-              <nav>
+              <nav className= "nav">
                 <Link to="/expedition">
                   <button className='exp-button'>Choose Expedition</button>
                 </Link>
@@ -60,7 +65,6 @@ export default function ChildHomepage() {
             </section>
           </div>
         </main>
-
       </div>
       </>
   }
