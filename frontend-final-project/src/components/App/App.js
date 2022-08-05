@@ -19,6 +19,7 @@ function App() {
   //We are setting this state at the top level so it can be drilled down to both the activity and the results page
   const [score, setScore] = useState(0);
   const [clicks, setClicks] = useState(0);
+  const [percentageState , setPercentageState] = useState(0);
 
   return (
     <div className="App">
@@ -33,9 +34,15 @@ function App() {
         <Route path="expedition" element={<ExpeditionPage />} />
         {/* this new route has been created- a page before the activity to explain
         how the activity works + reset the score */}
-        <Route path="activity-intro" element={<ActivityIntroPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>} />
-        <Route path="activity" element={<ActivityPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>} />
-        <Route path="results" element={<ResultsPage score= {score} clicks = {clicks}/>} />
+        <Route path="activity-intro" element={
+          <ActivityIntroPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>} />
+
+        <Route path="activity" element={
+          <ActivityPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} percentageState = {percentageState} setPercentageState = {setPercentageState}/>} />
+          
+        <Route path="results" element={
+          <ResultsPage score= {score} clicks = {clicks} percentageState = {percentageState} setPercentageState = {setPercentageState}/>} />
+
       </Routes>
     </div>
   );
