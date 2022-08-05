@@ -11,7 +11,7 @@ import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage"
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
-import "@fontsource/mochiy-pop-p-one"
+
 
 
 

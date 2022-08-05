@@ -1,35 +1,51 @@
 
-.button{
-  background-color: #4CAF50;
-  position: relative;
-  text-align: center;
-  border: none;
-  color: white;
-  padding: -10px 5px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  cursor: pointer;
+:root{
+
+  /*BUTTON VARIABLES*/
+
+  /*button background color*/
+  --btn-bg-clr: #EDBD48;
+
+  /*button text color*/
+  --btn-txt-clr:  #5F061E;
+}
+
+.App {
+  /* background-image: url(SplitEditWithTitle.jpg); */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   
-  
+min-width: 100vh;
+min-height: 100vh;
+
 }
 
 .button{
-  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
-  border-radius: 21px;
+  background: -webkit-linear-gradient(bottom, rgb(168, 94, 25), rgb(249, 189, 37));
+  box-shadow: 0px 1px 8px #5F061E;
   font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
+  border-radius: 15px;
+  border: none;
+  color: #5F061E;
+  text-decoration: none;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
   transition: 0.25s;
-  width: 153px;
-  box-shadow: 0px 1px 8px #24c64f;
+  width: 10vw;
+  height: 8vh;
   margin: 0;
-  margin-top: 0.5%;
-  margin-left: 0.5%;
+  transition: 0.5s;
 }
 
 .button:hover {
-  box-shadow: 0px 3px 14px #24c64f;
+  background: -webkit-linear-gradient(bottom, #29030d, #5F061E);
+  box-shadow: 0px 3px 14px #5F061E;
+  color: rgb(249, 189, 37);
 }
+
 
 
 /* #card {
@@ -44,32 +60,23 @@
   pointer-events: none;
 }*/
 
-:root{
-
-  /*BUTTON VARIABLES*/
-
-  /*button background color*/
-  --btn-bg-clr: #EDBD48;
-
-  /*button text color*/
-  --btn-txt-clr:  #5F061E;
-
-}
 
 
 button{
   background-color: var(--btn-bg-clr);
   color: var(--btn-txt-clr);
   border: none;
-  padding: 1%;
   border-radius: 15px;
   font-weight: bold;
   transition: 0.3s;
   border: 2px solid #5f061e76;
+  cursor: pointer;
+  padding: 1%;
 }
 
 button:hover{
   background-color: var(--btn-txt-clr);
   color: var(--btn-bg-clr);
 }
+
 

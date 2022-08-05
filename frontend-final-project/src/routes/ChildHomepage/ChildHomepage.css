@@ -1,7 +1,12 @@
 .page-container{
- margin: 0;
- padding: 0;
- overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../../daytime-jungle.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .child-homepage{
@@ -11,16 +16,93 @@
     flex-direction: column;
     justify-content: space-evenly;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
 }
 
-.background-image-daytime {
-    position:fixed;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    z-index: -1;
+.child-homepage-header{
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0;
+    margin-top: 5%;
+    color: rgb(249, 189, 37);
+    font-size: 4vw;
+    text-shadow: 4px 4px 0px #5F061E;
+    text-align: center;
 }
 
+.child-homepage-subheader{
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0;
+    margin-top: 5%;
+    color: #5F061E;
+    font-size: 2vw;
+    text-shadow: 2px 2px 0px rgb(249, 189, 37);
+    text-align: center;
+}
 
+.child-homepage-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.expedition-button{
+    background: none;
+    border: none;
+    margin: none;
+}
+
+.expedition-button:hover{
+    background:none;
+    margin-bottom: 3%;
+}
+
+.expedition-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+}
+
+.percentage-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(249, 189, 37);
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 1px 0px #5F061E;
+}
+
+.background-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 85vh;
+    border-radius: 25px;
+    background-color: #edca7365;
+}
+
+.locked{
+    opacity: 30%;
+}
+
+.expedition-button-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav{
+    position: relative;
+}
