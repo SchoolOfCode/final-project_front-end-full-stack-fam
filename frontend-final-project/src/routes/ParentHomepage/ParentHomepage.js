@@ -1,32 +1,38 @@
-import { Link, Router } from 'react-router-dom'
-import Profile from '../../components/Login/Profile';
-import './ParentHomepage.css'
-import Navbar from './Navbar';
-import { Routes, Route } from 'react-router-dom';
-import Parent from './Pages/Parent';
-import Reports from './Pages/Reports';
-import Products from './Pages/Products';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import Layout from "./Layout/Layout.js"
+import { GlobalStyle } from "./Styles/globalStyles.js"
+import { darkTheme, lightTheme } from "./Styles/theme.js"
+import Routing from "./Routing.js";
 
-export default function ParentHomepage() {
+export const ThemeContext = React.createContext(null);
+
+const ParentHomepage = () => {
+    const [theme, setTheme] = useState("light");
+    const themeStyle = theme === "light" ? lightTheme : darkTheme;
+
     return (
-      <>
-        
-        <Navbar />
-        <Routes>
-          <Route path='/parent' component={Parent} />
-          <Route path='/reports' component={Reports} />
-          <Route path='/products' component={Products} />
-        </Routes>
-        <main>
-          <h2>Welcome to the Parent Homepage</h2>
-          <p>
-            No children allowed!
-          </p>
-        </main>
-        <nav>
-          <Link to="/login">Back to Log In</Link>
-        </nav>
-        <Profile/>
-      </>
+        <ThemeContext.Provider value={{ setTheme, theme }}>
+            <ThemeProvider theme={themeStyle}>
+                <GlobalStyle />
+                <Helmet>
+                    <title>Sidebar - Code Focus</title>
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+                        rel="stylesheet"
+                    />
+                </Helmet>
+                <>
+                    <Layout>
+                        <Routing />
+                    </Layout>
+                </>
+            </ThemeProvider>
+        </ThemeContext.Provider>
     );
-  }
+};
+
+export default ParentHomepage;
