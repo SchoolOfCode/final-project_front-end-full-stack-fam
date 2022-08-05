@@ -71,11 +71,13 @@ return (
             }
         })}
     </section>
-            <p className = "score">Your Score: {score}</p>
+            <div className='the-actual-line'></div>
+            <p className = "score">SCORE: {score}</p>
+            
             <Timer initialMinute = {0} initialSeconds = {60}/>
 
-        <section className='button-container'>
-            <button className='submit-button' onClick = {function(){handleClick()}}>done!</button>
+            <section className='button-container'>
+                <button className='submit-button' onClick = {function(){handleClick()}}>check answer</button>
             </section>
     </div>
     
