@@ -1,19 +1,34 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ActivityPage.css';
+import NumLine from './NumLine/NumLine';
+import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
+import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 
-export default function ActivityPage() {
-    return (
+export default function ActivityPage({score, setScore, clicks ,setClicks}) {
+    
+// comment
+  return (
       <>
-        <main>
-          <h2>Welcome to the Activity Page</h2>
-          <p>
-            No parents allowed!
-          </p>
+        <LogoutButton/>
+        <MySvgDay className='activity-background-image-daytime'/>
+        <MySvgNight className='activity-background-image-nighttime'/>
+
+        <div className='text-container'>
+          <h1 className='the-activity-heading'>Number Line</h1>
+          <h2 className='lets-go'>LET'S GO!</h2>
+        </div>
+
+        <main className ="focus-area">
+          <div className='the-card-div'>
+            <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
+              <div className='num-line-container'>
+                <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
+                
+              </div>
+          </div>
         </main>
-        <nav>
-          <button><Link to="/">Home</Link></button>
-        </nav>
-        <nav>
+        {/* <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
         <nav>
@@ -24,7 +39,7 @@ export default function ActivityPage() {
         </nav>
         <nav>
           <Link to="/results">To the results page!</Link>
-        </nav>
+        </nav> */}
       </>
     );
   }

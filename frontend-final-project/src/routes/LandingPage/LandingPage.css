@@ -1,0 +1,61 @@
+  #second {
+    margin: 0px;
+    padding: 0px;
+    width: 1520px;
+    height: 110vh;
+    background: rgb(39, 125, 69);
+  }
+  .background-image{
+    background-image: url(../LoginPage/Split-Background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .landing-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .app-heading{
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(249, 189, 37);
+    font-size: 4vw;
+    text-shadow: 4px 4px 0px #5F061E;;
+  }
+
+
+  /* background-color: #df1515;
+    background-image: linear-gradient(45deg, white 40%, #3f5943 55%);
+    justify-content:space-around;
+    min-height: 600px;
+    color: #383838; 
+  }
+
+  .child {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+  }
+
+  .parent {
+    position: absolute;
+    top: 500px;
+    left: 1100px;
+  } */

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import LogoutButton from '../../components/Login/LogoutButton';
 import './ExpeditionPage.css'
 import './homeWood.css'
 import button from './homeWood.PNG'
@@ -17,11 +18,11 @@ export default function ExpeditionPage() {
       <div>
       <div className= 'Expedition'>
 
-<h1>Addition</h1>
-<h2>Are you ready for your next adventure?</h2>
+<h1 className = 'expeditionH1'>Addition</h1>
+<h2 className = 'expeditionH2'>Are you ready for your next adventure?</h2>
         
   <div  className = 'Button-container'>
-  <img src={button} className = 'button'/>
+  <img src={button} className = 'homeWoodButton'/>
 
 
         <nav>

@@ -1,20 +1,31 @@
-import { Link } from 'react-router-dom'
-import './LandingPage.css'
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "../../components/Login/LoginButton";
+import LogoutButton from "../../components/Login/LogoutButton";
+import "./LandingPage.css";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+ import "./LandingPage.css";
 
 export default function LandingPage() {
+  const navigate = useNavigate();
+  const { isAuthenticated } = useAuth0();
+ 
 
+  if (isAuthenticated) {
+    navigate("/login");
+  } else {
     return (
       <>
-        <main>
-          <h2>Welcome to Landing Page</h2>
-          <p>Users will arrive at this page first</p>
-        </main>
-        <nav>
-          <Link to="/login">Login</Link>
-        </nav>
-        <nav>
-          <Link to="/signup">Signup</Link>
-        </nav>
+        <div className = 'background-image'>
+        </div>
+        <div className= "landing-page">
+          <h1 className = {"app-heading " + "animate__animated " + "animate__rubberBand " + "animate__infinite " + "animate__slow " + "animate__delay-5s"}>WELCOME TO JUNGLE SUMS!</h1>
+          <section className= "button-container">
+          <LoginButton />
+          <LogoutButton />
+          </section>
+        </div>
       </>
-    );
+    )
   }
+}

@@ -4,10 +4,11 @@
 .Expedition{
   background-image: url('map.jpg');
    background-size: cover;
-   height: 950px; 
+   height: 100vh; 
+   width:100vw;
    background-repeat: no-repeat; 
 }
-h1{
+.expeditionH1{
   position: absolute;
   top: 12%;
   left:42%;
@@ -21,7 +22,7 @@ h1{
                                               
 }
 
-h2{
+.expeditionH2{
   position: absolute;
   top: 26%;
   left: 37%;
@@ -78,9 +79,7 @@ h2{
   animation-iteration-count: 1;
 }
 
-button.shake{
-  animation: shake 1s infinite;
-}
+
 @keyframes fadeIn {
   0% {opacity: 1};
   100% {opacity: 1};

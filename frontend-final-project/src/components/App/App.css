@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+
+:root{
+
+  /*BUTTON VARIABLES*/
+
+  /*button background color*/
+  --btn-bg-clr: #EDBD48;
+
+  /*button text color*/
+  --btn-txt-clr:  #5F061E;
 }
 
-.App-logo {
+.App {
+  /* background-image: url(SplitEditWithTitle.jpg); */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+min-width: 100vh;
+min-height: 100vh;
+
+}
+
+.button{
+  background: -webkit-linear-gradient(bottom, rgb(168, 94, 25), rgb(249, 189, 37));
+  box-shadow: 0px 1px 8px #5F061E;
+  font-family: "Raleway SemiBold", sans-serif;
+  border-radius: 15px;
+  border: none;
+  color: #5F061E;
+  text-decoration: none;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.25s;
+  width: 10vw;
+  height: 8vh;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: -webkit-linear-gradient(bottom, #29030d, #5F061E);
+  box-shadow: 0px 3px 14px #5F061E;
+  color: rgb(249, 189, 37);
+}
+
+
+
+/* #card {
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 410px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+} */
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
+}*/
+
+
+
+button{
+  background-color: var(--btn-bg-clr);
+  color: var(--btn-txt-clr);
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #5f061e76;
+  cursor: pointer;
+  padding: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover{
+  background-color: var(--btn-txt-clr);
+  color: var(--btn-bg-clr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
