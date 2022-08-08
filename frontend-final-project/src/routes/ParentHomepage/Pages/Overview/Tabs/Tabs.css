@@ -1,0 +1,17 @@
+.box-border-tabs {
+    box-sizing: border-box;
+    border: solid #4F9071 5px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    width: 700px;
+    height: 300px;
+    margin-top: 75%;
+    margin-left: -50%;
+    padding-right: 40%;
+
+
+}

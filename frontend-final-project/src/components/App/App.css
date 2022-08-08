@@ -1,3 +1,11 @@
+/* NAS - I addes this css to make my pages fit the whole screen, since they wete hald before - activity intro pages may have been impacted */
+body > #root {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
 :root{
 
@@ -10,17 +18,17 @@
   --btn-txt-clr:  #5F061E;
 }
 
-.App {
-  /* background-image: url(SplitEditWithTitle.jpg); */
-  background-attachment: fixed;
+/* NAS - I commented out this section since that image isnt being used and it caused issues with my page */
+/* .App {
+  background-image: url(SplitEditWithTitle.jpg); */
+  /* background-attachment: fixed;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
-min-width: 100vh;
-min-height: 100vh;
-
-}
+  min-height: 100%;
+  min-width: 100vh;
+  overflow-x: hidden;
+} */
 
 .button{
   background: -webkit-linear-gradient(bottom, rgb(168, 94, 25), rgb(249, 189, 37));

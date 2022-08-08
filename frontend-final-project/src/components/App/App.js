@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignupPage />} />
-        <Route path="parent" element={<ParentHomepage />} />
+        <Route path="parent/*" element={<ParentHomepage />} />
         <Route path="child" element={<ChildHomepage />} />
         <Route path="expedition" element={<ExpeditionPage />} />
         {/* this new route has been created- a page before the activity to explain
