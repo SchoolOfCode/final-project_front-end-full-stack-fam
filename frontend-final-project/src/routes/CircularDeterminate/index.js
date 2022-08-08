@@ -35,7 +35,9 @@ export default function CircularDeterminate({percentageState}) {
     <ThemeProvider theme={theme}>
     <Stack className='circular-determinate' spacing={2} direction="row">
       
-      <CircularProgress variant="determinate" value={progress} />
+      <CircularProgress variant="determinate" value={progress} 
+        style={{position: 'relative', zIndex: '1'}}
+      />
     
     </Stack>
     </ThemeProvider>

@@ -9,7 +9,7 @@ import Timer from './CountdownTimer';
 // - restyle countdown timer: text and bar
 // x - add banana
 // - add counter to banana: number / render a new banana x3?
-// - add burst animation
+// - add burst animation - looking for mui component / similar
 // ! - disable button when input field is inactive
 //  
 // ! - GENERAL FLEX POSITIONING
