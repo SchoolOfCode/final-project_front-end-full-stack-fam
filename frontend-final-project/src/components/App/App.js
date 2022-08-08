@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import LandingPage from "../../routes/LandingPage/LandingPage";
 import LoginPage from "../../routes/LoginPage/LoginPage";
 import SignupPage from "../../routes/SignupPage/SignupPage";
@@ -11,6 +11,7 @@ import ActivityIntroPage from "../../routes/ActivityIntroPage/ActivityIntroPage"
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import ResultsPage from "../../routes/ResultsPage/ResultsPage";
 import LogoutButton from "../Login/LogoutButton";
+import PostRequest from "../../routes/PostRequest/PostRequest";
 
 
 
@@ -29,8 +30,9 @@ function App() {
     setchildData(data)
   }
 
-  getDataChild();
-// console.log(childData);
+  useEffect(() => {
+getDataChild();
+}, []);
 
 async function getDataParent() {
   let response = await fetch("https://fullstack-family.herokuapp.com/parent");
@@ -38,8 +40,9 @@ async function getDataParent() {
   setparentData(data)
 }
 
+useEffect(() => {
 getDataParent();
-console.log(parentData);
+}, []);
 
   return (
     <div className="App">
@@ -50,6 +53,7 @@ console.log(parentData);
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage childData={childData}/>} />
         <Route path="signup" element={<SignupPage />} />
+        <Route path="post" element={<PostRequest />} />
         <Route path="parent" element={<ParentHomepage />} />
         <Route path="child" element={<ChildHomepage />} />
         <Route path="expedition" element={<ExpeditionPage />} />

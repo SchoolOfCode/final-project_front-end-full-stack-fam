@@ -12,14 +12,13 @@ export default async function getDataChild() {
 
   async function dataPost() {
   
-    let response = await fetch("https://jungle-sum.netlify.app/login", {
+    let response = await fetch("https://fullstack-family.herokuapp.com/child", {
       method: "POST",
       body: JSON.stringify({
-        datecompleted: "Pinda test",
-        name: "Is this posting!",
-        scoreone: 1,
-        student_id: 1,
-        timecompleted: "00:00:00"
+        name: "TESTA",
+        scoreone: 0,
+        timecompleted: "00:00:00",
+        datecompleted: "2011-05-03T00:00:00.000Z"
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",

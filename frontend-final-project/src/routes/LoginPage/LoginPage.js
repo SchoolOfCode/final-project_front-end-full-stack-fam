@@ -15,7 +15,7 @@ export default function LoginPage({childData}) {
   const child = childData.payload[0].name
   const parentName = user.name
 
-
+  
 function parentPassword() {
   let access = prompt("Please enter your password");
   if (access === password) {
