@@ -20,6 +20,26 @@ function App() {
   const [score, setScore] = useState(0);
   const [clicks, setClicks] = useState(0);
   const [percentageState , setPercentageState] = useState(0);
+  const [childData, setchildData] = useState();
+  const [parentData, setparentData] = useState();
+
+ async function getDataChild() {
+    let response = await fetch("https://fullstack-family.herokuapp.com/child");
+    let data = await response.json();
+    setchildData(data)
+  }
+
+  getDataChild();
+// console.log(childData);
+
+async function getDataParent() {
+  let response = await fetch("https://fullstack-family.herokuapp.com/parent");
+  let data = await response.json();
+  setparentData(data)
+}
+
+getDataParent();
+console.log(parentData);
 
   return (
     <div className="App">
@@ -28,7 +48,7 @@ function App() {
       {/* <LoginButton /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<LoginPage />} />
+        <Route path="login" element={<LoginPage childData={childData}/>} />
         <Route path="signup" element={<SignupPage />} />
         <Route path="parent" element={<ParentHomepage />} />
         <Route path="child" element={<ChildHomepage />} />

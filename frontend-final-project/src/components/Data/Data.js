@@ -1,11 +1,11 @@
-
+import { useState } from "react";
 
 
 export default async function getDataChild() {
     let response = await fetch("https://fullstack-family.herokuapp.com/child");
     let data = await response.json();
-    console.log(data);
   }
+  
   
   getDataChild();
 
@@ -15,9 +15,11 @@ export default async function getDataChild() {
     let response = await fetch("https://jungle-sum.netlify.app/login", {
       method: "POST",
       body: JSON.stringify({
-        title: "Pinda test",
-        body: "Is this posting!",
-        userId: 1,
+        datecompleted: "Pinda test",
+        name: "Is this posting!",
+        scoreone: 1,
+        student_id: 1,
+        timecompleted: "00:00:00"
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
