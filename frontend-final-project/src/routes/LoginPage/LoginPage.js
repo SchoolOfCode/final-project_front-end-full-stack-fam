@@ -3,7 +3,7 @@ import "./LoginPage.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LogoutButton from "../../components/Login/LogoutButton";
-
+import getDataChild from "../../components/Data/Data";
 
 export default function LoginPage() {
   const [password, setPassword] = useState("1234");
@@ -20,6 +20,12 @@ function parentPassword() {
     alert("Please try again!")
   }
 }
+
+  function handleClick () {
+
+    getDataChild();
+  }
+
   return (
     <>
       <div id="container">
@@ -35,6 +41,7 @@ function parentPassword() {
               Let's Go!
             </button>
           </Link>
+          <button onClick = {handleClick}>Click Me!</button>
         </section>
         <section className = 'parent-text-button-container'>
           <h2 className = {"parent-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
