@@ -1,69 +1,77 @@
 .body-overview-page {
-    position: fixed;
-    left: 60%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  left: 60%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
 .overview-heading {
-    font-size: 100px;
-    font-family: 'Fredoka One', cursive;
-    color:rgb(255, 255, 255);
-    text-shadow: 2px 2px #E3A200;
-    -webkit-text-stroke: 0.1px black;
-    text-align: center;
-    margin-top: -70%;
-
+  font-size: 100px;
+  font-family: "Fredoka One", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #e3a200;
+  -webkit-text-stroke: 0.1px black;
+  text-align: center;
+  /* margin-top: -70%; */
 }
 
 .grid-container-overview {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1%;
-    position: fixed;
-    justify-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1%; */
+  /* position: fixed; */
+  /* justify-items: center; */
+
+  display: grid;
+  grid-template-areas:
+    "bodyLeft bodyRight"
+    "head head";
+  gap: 10px;
+  padding: 10px;
 }
 
 .grid-student-profile {
-    box-sizing: border-box;
-    width: 400px;
-    height: 300px;
-    border: solid #4F9071 5px;
-    padding: 5px;
-    border-radius: 25px;
-    background-color: #D9D9D9;
-    position: fixed;
-    margin-top: 10%;
-    margin-left: -50%;
-    line-height: 3.5;
+  /* box-sizing: border-box; */
+  width: 400px;
+  height: 300px;
+  border: solid #4f9071 5px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  /* position: fixed; */
+  /* margin-top: 10%; */
+  /* margin-left: -50%; */
+  line-height: 3.5;
+  grid-area: bodyLeft;
 }
 
 .grid-topics {
-    box-sizing: border-box;
-    width: 400px;
-    height: 300px;
-    border: solid #4F9071 5px;
-    padding: 5px;
-    border-radius: 25px;
-    background-color: #D9D9D9;
-    position: fixed;
-    margin-top: 10%;
-    margin-left: 70%;
-    justify-items: center;
+  /* box-sizing: border-box; */
+  width: 400px;
+  height: 300px;
+  border: solid #4f9071 5px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  /* position: fixed; */
+  /* margin-top: 10%; */
+  /* margin-left: 70%; */
+  justify-items: center;
+  grid-area: bodyRight;
+}
+
+.basic-tabs {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  border: solid #4f9071 5px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  grid-area: head;
 }
 
 .subheadings-overview {
-    font-size: 25px;
-    text-align: center;
+  font-size: 25px;
+  text-align: center;
 }
-
-
-
-/* .grid-tabs {
-    box-sizing: border-box;
-    width: 100%;
-    border: solid #4F9071 5px;
-    padding: 5px;
-    border-radius: 25px;
-    background-color: #D9D9D9;
-} */
