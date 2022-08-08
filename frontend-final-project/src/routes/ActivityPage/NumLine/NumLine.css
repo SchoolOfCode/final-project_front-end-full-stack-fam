@@ -6,3 +6,17 @@ padding: 5px;
 border-radius: 25px;
     
 }
+
+.score-counter {
+
+color: #ffffff
+
+}
+
+.num-input {
+
+    padding: 10px;
+    height: 10%;
+    width: 10%;
+
+}

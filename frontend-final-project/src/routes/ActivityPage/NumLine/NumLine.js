@@ -3,17 +3,32 @@ import { useState, useEffect } from 'react';
 import Timer from './CountdownTimer';
 
 
+// TO DO:
+// - separately give the input field a className (for screenreaders) - how ?! - already has className: "num-input" ??
+// - make circles fixed size; including input field
+// - restyle countdown timer: text and bar
+// x - add banana
+// - add counter to banana: number / render a new banana x3?
+// - add burst animation
+// ! - disable button when input field is inactive
+//  
+// ! - GENERAL FLEX POSITIONING
+
 export default function NumLine({score, setScore, clicks, setClicks}){
     
-    //SETTING OUR DEFAULT STATE
+    //SETTING OUR DEFAULT STATES: GENERATED NUM & PREV GENERATED NUM
     const[answer, setAnswer] = useState("");
     const [prevAnsw, setPrevAnsw] = useState("");
 
-    //ASSIGNING ARRAY
+    //const [buttonState , setButtonState] = useState(false);
+
+    //ASSIGNING ARRAY VALUES & CALCULATING A RANDOM WHOLE NUM
     let array = ['2','4','6','8','10','12','14','16','18','20']
     let ranNum = Math.floor(Math.random() * 10)
+    //let isAnonymous = true;
 
-    //THIS CHECKS THE NUMBER DOESNT REPEAT TWO TIMES IN A ROW
+
+    //THIS CHECKS THE NUMBER DOESNT REPEAT TWO TIMES IN A ROW & RECALCUATES IF SO
     function checkRanNum() {
         console.log(`RAN NUM: ${ranNum} PREV ANSWER: ${prevAnsw}`)
         while (ranNum === prevAnsw){
@@ -23,16 +38,18 @@ export default function NumLine({score, setScore, clicks, setClicks}){
         return ranNum
     }
 
+    // CALLS THE NUMBER CHECKING FUNCTION
         checkRanNum();
 
     
     //USE EFFECT GOES HERE TO PREVENT INFINITE LOOP AND MISMATCH OF ANSWER AND INPUT PLACEMENT!
     useEffect(() => {
         setAnswer(array[ranNum]);
+    // THIS DISABLES THE REACT WARNING (WHICH PREVENTS FROM COMPILING)
     // eslint-disable-next-line
     }, [ranNum])
     
-    //IMMUTABLE CHANGING OF ARRAY TO RENDER INPUT FIELD EACH TIME
+    //IMMUTABLE CHANGING OF ARRAY TO RENDER A NEW INPUT FIELD EACH TIME
     console.log(`random number is ${array[ranNum]}`)
     let newArray = [...array.slice(0, ranNum),"input",...array.slice(ranNum+1)]
     console.log(newArray);
@@ -42,8 +59,18 @@ export default function NumLine({score, setScore, clicks, setClicks}){
     function handleClick(){
         const input = document.querySelector(".num-input");
         console.log(input.value)
+
+        //event.currentTarget.disabled = true;
+        //console.log('button clicked');
+
         console.log(`answer is ${answer}`)
         const inputValue = (input.value);
+
+        //if (typeof inputValue == "string") {
+        //   setButtonState(true)
+        // }
+
+
         if(inputValue === answer){
           console.log('number matches!');
             setClicks(clicks +1);
@@ -72,7 +99,7 @@ return (
         })}
     </section>
             <div className='the-actual-line'></div>
-            <p className = "score">SCORE: {score}</p>
+            <p className = "score-counter">SCORE: {score}</p>
             
             <Timer initialMinute = {0} initialSeconds = {60}/>
 
@@ -83,3 +110,6 @@ return (
     
 )
 }
+
+
+//Button disable? </section>>disabled={buttonState ? true : false}

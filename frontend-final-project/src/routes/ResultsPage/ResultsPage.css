@@ -26,10 +26,35 @@
 
 }
 
-.h3-score {
+
+.the-card-div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 40vw;
+    height: 60vh;
+    
+
+    border-radius: 25px;
+    background-color: #edb0734d;
+
+}
+
+
+
+
+
+
+
+
+.h2-score {
 
     font-family: 'Quicksand', sans-serif;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    font-size: medium;
 
 
 }

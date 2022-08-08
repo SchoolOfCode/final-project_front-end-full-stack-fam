@@ -16,13 +16,13 @@ return(
          <MySvg className='activity-intro-background-image-daytime'/>
          <main className= 'main'>
 
-            {/* ACTIVITY INSRUCTIONS WILL GO HERE */}
-            
-            <h3>
-                Collect as many bananas as you can before night time! <br/>
-                Are you ready?
-            </h3>
 
+            <h1 className='activity-intro-h1'>Adventure #1</h1>
+            <div className='the-card-div'>
+            <h3 className='activity-intro-h3'>
+                Collect as much fruit as you can before night time! </h3>
+            <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
+            <h3 className='activity-intro-ready'>Are you ready?</h3>
             <section className = "button-container">
                 <nav>
                     <Link to="/activity">
@@ -36,6 +36,7 @@ return(
                     </Link>
                 </nav>
             </section>
+            </div>
             
         </main>
         </> 
