@@ -2,19 +2,6 @@ import './NumLine.css'
 import { useState, useEffect } from 'react';
 import Timer from './CountdownTimer';
 
-
-// TO DO:
-// - separately give the input field a className (for screenreaders) - how ?! - already has className: "num-input" ??
-// - make circles fixed size; including input field
-// - restyle countdown timer: text and bar
-// x - add banana
-// - add counter to banana: number / render a new banana x3?
-// - add burst animation - looking for mui component / similar
-// ! - disable button when input field is inactive
-//  
-// ! - GENERAL FLEX POSITIONING
-
-
 export default function NumLine({score, setScore, clicks, setClicks}){
     
     //SETTING OUR DEFAULT STATES: GENERATED NUM & PREV GENERATED NUM
