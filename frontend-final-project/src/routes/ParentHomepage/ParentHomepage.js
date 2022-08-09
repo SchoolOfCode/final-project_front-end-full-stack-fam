@@ -9,13 +9,18 @@ import WeeklyARPage from "./Pages/WeeklyARPage.js";
 import Support from "./Pages/Support.js";
 import Layout from "./Layout/Layout.js";
 import "./ParentHomepage.css";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 export const ThemeContext = React.createContext(null);
 
+
 const ParentHomepage = () => {
+    const {user} = useAuth0()
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
+
+    console.log(user.email)
 
     return (
         <div className="background-parent-homepage"> 
