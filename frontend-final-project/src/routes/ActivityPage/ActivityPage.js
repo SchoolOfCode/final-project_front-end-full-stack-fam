@@ -2,6 +2,7 @@
 import LogoutButton from '../../components/Login/LogoutButton';
 
 import Timer from '../ActivityPage/NumLine/CountdownTimer.js';
+import { LinearProgBar } from '../LinearProgBar';
 
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
@@ -30,13 +31,17 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
                 <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
               </div>
           </div>
+
           <div className="banana-container">
-          <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
-          <p className = "score-counter">SCORE: {score}</p>
-
-
-          <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
+            <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
+            <p className = "score-counter">SCORE: {score}</p> 
           </div>
+
+          <div className='the-countdown-container'>
+            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
+            
+          </div>
+
 
         </main>
 

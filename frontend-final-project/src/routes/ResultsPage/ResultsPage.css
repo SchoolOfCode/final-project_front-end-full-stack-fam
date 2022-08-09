@@ -1,4 +1,4 @@
-.main-area{
+.main-area {
     width:100vw;
     height:100vh;
     display: flex;
@@ -59,6 +59,29 @@
 
 }
 
+
+.the-score-badge {
+
+display: flex;
+align-content: center;
+justify-content: center;
+
+height: 20vh;
+width: 20vh;
+
+
+border: dashed black;
+
+}
+
+
+.the-banana-itself {
+
+    z-index: 3;
+    
+}
+
+
 .h3-percentage {
 
     font-family: 'Quicksand', sans-serif;
@@ -74,13 +97,14 @@
 
 }
 
-.button-container{
+.button-container-results{
 
     display: flex; 
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 10vh;
+    width: 40vw;
     
 }
 
@@ -93,3 +117,4 @@ padding: 10px
     padding: 10px
     
 }
+

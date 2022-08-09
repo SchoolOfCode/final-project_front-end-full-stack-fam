@@ -92,7 +92,7 @@ return (
     
             <div className='spacer-div'></div>
 
-            <section className='button-container'>
+            <section className='button-container-numline'>
                 <button className='submit-button' onClick = {function(){handleClick()}}>check answer</button>
             </section>
     </div>

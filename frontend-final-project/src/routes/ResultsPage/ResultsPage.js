@@ -52,13 +52,23 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
           <div className="the-card-div">
         <h2 className='h2-score'>You got {score} correct</h2>
         <h3 className='h3-encouragement'>{theMessage}</h3>
-        <CircularDeterminate score={score} percentageState={percentageState}/>
+
+        <div className='the-score-badge'>
+          <CircularDeterminate score={score} percentageState={percentageState}/>
+
+          <img className='the-banana-itself' src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
+
+        </div>
+
+        <div className='score-percentage-container'>
+
+          <h3 className='h3-percentage'>{scorePercent}%</h3>
+
+        </div>
 
 
-        <h3 className='h3-percentage'>{scorePercent}%</h3>
-        <img src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
 
-        <div className='button-container'>
+        <div className='button-container-results'>
           <nav>
             <Link to="/expedition">
               <button className = "map-button">Back to Map</button>

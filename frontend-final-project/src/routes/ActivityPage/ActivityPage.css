@@ -74,7 +74,7 @@
 
 
 
-.button-container{
+.button-container-numline{
 
     margin-top: 1%;
     width:100%;
@@ -97,7 +97,16 @@
 
 }
 
+.the-countdown-container {
 
+        width: 60px;
+        height: 50vh;
+        
+        border: solid #1900ff4c 3px;
+        border-radius: 25px;
+        background-color: #51bfce3f;
+
+}
 
 
 .num-grid {
@@ -155,6 +164,18 @@ p {
     color: #ffffff
     
     }
+
+
+
+.the-new-progress {
+
+    colorPrimary: black;
+    colorSecondary: red;
+
+}
+
+
+
 
 .activity-background-image-daytime {
     position:fixed;
