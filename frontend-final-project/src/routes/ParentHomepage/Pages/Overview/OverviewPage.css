@@ -10,7 +10,7 @@
   font-family: "Fredoka One", cursive;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px #e3a200;
-  -webkit-text-stroke: 0.1px black;
+  -webkit-text-stroke: 0.2px black;
   text-align: center;
   /* margin-top: -70%; */
 }
