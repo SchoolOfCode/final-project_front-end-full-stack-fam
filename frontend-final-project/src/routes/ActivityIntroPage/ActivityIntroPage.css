@@ -19,20 +19,21 @@
 }
 
 .the-button-container{
+
     display: flex; 
     flex-direction: row;
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    
-    border: solid black;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 10vh;
+    width: 70vw;
+
 }
 
 
 .start-button {
 
 display: flex;
-padding: 10px;
+padding: 10px 25px;
 
 }
 
@@ -51,10 +52,10 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    width: 70vw;
-    height: 20vw;
+    width: 80vw;
+    height: 30vw;
     
 
     border-radius: 25px;
@@ -62,6 +63,14 @@ padding: 10px;
 
 }
 
+
+.the-activity-number {
+
+    font-family: 'Fredoka One', sans-serif;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+
+}
 
 
 .activity-intro-h1 {
@@ -72,7 +81,6 @@ padding: 10px;
     -webkit-text-stroke: 0.001px black;
 
 }
-
 
 
 .activity-intro-h3 {

@@ -17,7 +17,14 @@ return(
          <main className= 'main-area'>
 
 
-            <h1 className='activity-intro-h1'>Adventure #1</h1>
+            <div className='the-title-text-area'>
+
+                <p className='the-activity-number'>Adventure #1 :</p>
+                <h1 className='activity-intro-h1'>Number Line</h1>
+
+            </div>    
+
+
             <div className='the-card-div-intro'>
             <h3 className='activity-intro-h3'>
                 Collect as much fruit as you can before night time! </h3>
