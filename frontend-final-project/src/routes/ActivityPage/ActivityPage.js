@@ -26,12 +26,15 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
 
           <div className='the-card-div-activity'>
             <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
-              <div className='num-line-container'>
+            <div className='num-line-container'>
                 <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
               </div>
           </div>
           <div className="banana-container">
           <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
+          <p className = "score-counter">SCORE: {score}</p>
+
+
           <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
           </div>
 

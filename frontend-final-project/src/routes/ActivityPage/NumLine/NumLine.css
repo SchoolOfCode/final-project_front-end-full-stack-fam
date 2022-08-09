@@ -3,19 +3,21 @@
 
 }
 
+
+.input-border {
+
+    background-color: #e9b91e;
+    border: solid #1900ff7c 3px;
+    border-radius: 50%;
+
+}
+
 .num-input {
 
-    padding: 10px;
-    height: 10%;
-    width: 10%;
+    width: 100%;
 
 }
 
-.num-text {
-
-
-
-}
 
 .the-countdown-text {
 
@@ -33,18 +35,10 @@ border-radius: 25px;
     
 }
 
-.score-counter {
 
-color: #ffffff
+.spacer-div {
 
-}
+padding: 10px;
 
-
-.button-container {
-
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between; 
 
 }

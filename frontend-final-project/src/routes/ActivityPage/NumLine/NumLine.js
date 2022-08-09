@@ -79,7 +79,7 @@ return (
         <section className= "num-grid">
             {newArray.map(function(item){
                 if( item === "input" ){
-                    return <input className="num-input" type='text' maxLength={2}></input>
+                    return <div className='input-border'><input className="num-input" type='text' maxLength={2}></input></div>
                 }
                 else{
                     return <p className="num-text">{item}</p>
@@ -90,9 +90,7 @@ return (
 
             <div className='the-actual-line'></div>
     
-            <p className = "score-counter">SCORE: {score}</p>
-            
-            
+            <div className='spacer-div'></div>
 
             <section className='button-container'>
                 <button className='submit-button' onClick = {function(){handleClick()}}>check answer</button>

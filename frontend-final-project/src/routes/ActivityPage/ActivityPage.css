@@ -11,8 +11,6 @@
     width:100vw;
     height: 30vh;
 
-    border: solid #2d5d00;
-
 }
 
 
@@ -42,8 +40,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    border: solid rgb(37, 134, 4);
 
 }
 
@@ -59,32 +55,31 @@
     height: 50vh;
 
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #51bfce82;
 
 }
 
 
 
 .num-line-container{
+
     display: flex;
     flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
     height: 30vh;
     width: 50vw;
-
-    border: solid gold;
- 
 
 }
 
 
 
 .button-container{
+
     margin-top: 1%;
     width:100%;
     display: flex;
     justify-content: center;
-
-    border: solid black;
 
 }
 
@@ -94,11 +89,11 @@
 
 
     width: 60px;
-    height: 160px;
+    height: 50vh;
     
-    border: solid #ffffff9a 2px;
+    border: solid #1900ff4c 3px;
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #51bfce3f;
 
 }
 
@@ -120,21 +115,24 @@
 
     margin: 0;
     clip-path: circle();
-    background-color: rgb(233, 185, 30);
+    background-color: #e9b91e;
+    
     font-size: 30px;
+    color: #6e0000;
 }
 
 .num-input {
     text-align: center;
     margin: 0;
     width: 100%;
-    clip-path: circle();
-    background-color: rgb(233, 185, 30);
+    background-color: #ffffff00;
     border: none;
     outline: none;
     font-size: 30px;
-    color: #28c522;
+    color: #3113ab;
 }
+
+
 
 .submit-button {
     padding: 10px;
@@ -151,6 +149,12 @@ p {
     font-family: 'Quicksand', sans-serif;
 
 }
+
+.score-counter {
+
+    color: #ffffff
+    
+    }
 
 .activity-background-image-daytime {
     position:fixed;
