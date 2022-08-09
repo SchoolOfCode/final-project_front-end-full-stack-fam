@@ -53,8 +53,8 @@ getDataParent();
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<LoginPage childData={childData}/>} />
         <Route path="signup" element={<SignupPage />} />
+        <Route path="parent/*" element={<ParentHomepage />} />
         <Route path="post" element={<PostRequest />} />
-        <Route path="parent" element={<ParentHomepage />} />
         <Route path="child" element={<ChildHomepage />} />
         <Route path="expedition" element={<ExpeditionPage />} />
         {/* this new route has been created- a page before the activity to explain

@@ -1,3 +1,11 @@
+/* NAS - I addes this css to make my pages fit the whole screen, since they wete hald before - activity intro pages may have been impacted */
+body > #root {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
 :root{
 
@@ -9,8 +17,6 @@
   /*button text color*/
   --btn-txt-clr:  #5F061E;
 }
-
-
 
 .button{
   background: -webkit-linear-gradient(bottom, rgb(168, 94, 25), rgb(249, 189, 37));
