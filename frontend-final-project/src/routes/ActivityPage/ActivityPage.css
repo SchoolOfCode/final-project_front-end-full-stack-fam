@@ -36,10 +36,12 @@
 
 
 .focus-area {
-    width:100vw;
-    height:50vh;
+    width: 100vw;
+    height: 50vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     
     border: solid rgb(37, 134, 4);
 
