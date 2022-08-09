@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom"
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
@@ -19,6 +19,16 @@ const ParentHomepage = () => {
     const {user} = useAuth0()
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
+
+    async function getChildDataByEmail() {
+        let response = await fetch(`https://fullstack-family.herokuapp.com/parent?=${user.email}`);
+        let data = await response.json();
+        console.log(data)
+      }
+      
+      useEffect(() => {
+      getChildDataByEmail();
+      }, []);
 
     console.log(user.email)
 
