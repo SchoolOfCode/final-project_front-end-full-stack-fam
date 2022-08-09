@@ -14,6 +14,8 @@ import Timer from './CountdownTimer';
 //  
 // ! - GENERAL FLEX POSITIONING
 
+// comment
+
 export default function NumLine({score, setScore, clicks, setClicks}){
     
     //SETTING OUR DEFAULT STATES: GENERATED NUM & PREV GENERATED NUM
@@ -88,20 +90,23 @@ export default function NumLine({score, setScore, clicks, setClicks}){
 
 return (
     <div>
-    <section className= "num-grid">
-        {newArray.map(function(item){
-            if( item === "input" ){
-                return <input className="num-input" type='text' maxLength={2}></input>
-            }
-            else{
-                return <p className="num-text">{item}</p>
-            }
-        })}
-    </section>
+        <section className= "num-grid">
+            {newArray.map(function(item){
+                if( item === "input" ){
+                    return <input className="num-input" type='text' maxLength={2}></input>
+                }
+                else{
+                    return <p className="num-text">{item}</p>
+                }
+            })}
+        </section>
+
+
             <div className='the-actual-line'></div>
+    
             <p className = "score-counter">SCORE: {score}</p>
             
-            <Timer initialMinute = {0} initialSeconds = {60}/>
+            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
 
             <section className='button-container'>
                 <button className='submit-button' onClick = {function(){handleClick()}}>check answer</button>
