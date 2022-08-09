@@ -21,7 +21,7 @@ const ParentHomepage = () => {
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
 
     async function getChildDataByEmail() {
-        let response = await fetch(`https://fullstack-family.herokuapp.com/parent?=${user.email}`);
+        let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
         let data = await response.json();
         console.log(data)
       }
