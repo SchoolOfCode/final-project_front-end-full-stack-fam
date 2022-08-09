@@ -33,7 +33,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 // attempting to set this state (percentageState) to match the above calculated scorePercent:
   setPercentageState(scorePercent);
 
-
+//comment
 
 // matching messages to calculated percentages
     if (scorePercent >= 80) {
