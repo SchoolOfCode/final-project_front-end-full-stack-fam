@@ -31,3 +31,51 @@ padding: 10px
 
 }
 
+
+.the-card-div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 70vw;
+    
+
+    border-radius: 25px;
+    background-color: #edca7365;
+
+}
+
+
+
+.activity-intro-h1 {
+
+    color:rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 2px 2px #E3A200;
+    -webkit-text-stroke: 0.001px black;
+
+}
+
+
+
+.activity-intro-h3 {
+
+    color: #ffffff;
+    
+}
+
+.activity-intro-descr {
+
+    color: #ffffff;
+    font-size: small;
+
+}
+
+.activity-intro-ready {
+
+    color: #ffffff;
+
+}
+

@@ -27,9 +27,9 @@
     font-family: "Mochiy Pop P One", sans-serif;
     margin: 0;
     margin-top: 5%;
-    color: rgb(249, 189, 37);
+    color: #5F061E;
     font-size: 4vw;
-    text-shadow: 4px 4px 0px #5F061E;
+    text-shadow: 4px 4px 0px #f9bd25;
     text-align: center;
 }
 
@@ -39,7 +39,7 @@
     margin-top: 5%;
     color: #5F061E;
     font-size: 2vw;
-    text-shadow: 2px 2px 0px rgb(249, 189, 37);
+    text-shadow: 2px 2px 0px #f9bd25;
     text-align: center;
 }
 
@@ -89,7 +89,7 @@
     width: 60vw;
     height: 85vh;
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #edca7389;
 }
 
 .locked{

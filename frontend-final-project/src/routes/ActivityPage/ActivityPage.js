@@ -7,7 +7,7 @@ import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 
 export default function ActivityPage({score, setScore, clicks ,setClicks}) {
     
-// comment
+
   return (
       <>
         <LogoutButton/>
@@ -16,7 +16,7 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
 
         <div className='text-container'>
           <h1 className='the-activity-heading'>Number Line</h1>
-          <h2 className='lets-go'>LET'S GO!</h2>
+          <h2 className='lets-go-h2'>LET'S GO!</h2>
         </div>
 
         <main className ="focus-area">
@@ -24,8 +24,10 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
             <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
               <div className='num-line-container'>
                 <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
-                
               </div>
+          </div>
+          <div className="banana-container">
+          <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
           </div>
         </main>
         {/* <nav>

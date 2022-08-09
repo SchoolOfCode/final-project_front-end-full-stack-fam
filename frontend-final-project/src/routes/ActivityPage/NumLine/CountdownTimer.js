@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import './CountdownTimer.css';
 
 
 const Timer = (props) => {
@@ -32,10 +33,10 @@ const Timer = (props) => {
     return (
         <div>
         { minutes === 0 && seconds === 0
-            ? <div>TIME'S UP!</div>
-            : <div>
-            <progress value = {seconds} max="60" id="progressBar"></progress>
-            <h1> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1>
+            ? <div className='time-up-text'>TIME'S UP!</div>
+            : <div className='countdown-prog-container'>
+            <progress className='progress-countdown' value = {seconds} max="60" id="progressBar"></progress>
+            <p className='the-countdown-text' > {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</p>
             </div>
         }
         </div>

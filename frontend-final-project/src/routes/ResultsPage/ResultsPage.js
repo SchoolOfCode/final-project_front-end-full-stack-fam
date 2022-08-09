@@ -33,7 +33,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 // attempting to set this state (percentageState) to match the above calculated scorePercent:
   setPercentageState(scorePercent);
 
-
+//comment
 
 // matching messages to calculated percentages
     if (scorePercent >= 80) {
@@ -49,10 +49,14 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
         <main className = "main">
        <MySvgNight className = 'results-background-image-nighttime'/>
           <h1 className='heading'>Well Done!</h1>
-        <h3 className='h3-score'>Your score is {score}!</h3>
-        <h3 className='h3-percentage'>You got {scorePercent}% correct</h3>
+          <div className="the-card-div">
+        <h2 className='h2-score'>You got {score} correct</h2>
         <h3 className='h3-encouragement'>{theMessage}</h3>
         <CircularDeterminate score={score} percentageState={percentageState}/>
+
+
+        <h3 className='h3-percentage'>{scorePercent}%</h3>
+        <img src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
 
         <div className='button-container'>
           <nav>
@@ -65,6 +69,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
               <button className = "retry-button">Try Again</button>
             </Link>
           </nav>
+          </div>
         </div>
         </main>
       </>
