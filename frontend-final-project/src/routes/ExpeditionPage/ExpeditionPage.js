@@ -29,6 +29,7 @@ export default function ExpeditionPage() {
         <nav>
           <Link to="/child"><button className = 'ChildHomeButton'>Home</button></Link>
         </nav>
+        
 
     
     
@@ -82,6 +83,7 @@ export default function ExpeditionPage() {
 <img src = {path} className = 'fullPath4'/>
 <img src = {path} className = 'fullPath5'/>
 
+
   
   <img src={woodStop} className = 'woodStop1'/>
   <nav>
@@ -90,6 +92,7 @@ export default function ExpeditionPage() {
         </nav>
         
         
+
         
 
         <img src={woodStop} className = 'woodStop2'/>
