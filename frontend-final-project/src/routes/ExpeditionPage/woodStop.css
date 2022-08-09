@@ -6,7 +6,7 @@
 }
 
 .woodStopButton1{
-    position:absolute; top:53%; left:16%;
+    position:absolute; top:53%; left:12%;
     cursor: pointer;
     border: 40px solid transparent;
     border-radius: 40px;
@@ -16,6 +16,28 @@
 }
 
 .woodStopButton1:hover{
+    background-color: transparent;
+    color:transparent;
+}
+
+.woodStopButton2:hover{
+    background-color: transparent;
+    color:transparent;
+}
+.woodStopButton3:hover{
+    background-color: transparent;
+    color:transparent;
+}
+.woodStopButton4:hover{
+    background-color: transparent;
+    color:transparent;
+}
+.woodStopButton5:hover{
+    background-color: transparent;
+    color:transparent;
+}
+
+.woodStopButton6:hover{
     background-color: transparent;
     color:transparent;
 }
