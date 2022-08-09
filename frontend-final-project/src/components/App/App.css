@@ -10,17 +10,7 @@
   --btn-txt-clr:  #5F061E;
 }
 
-.App {
-  /* background-image: url(SplitEditWithTitle.jpg); */
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-min-width: 100vh;
-min-height: 100vh;
 
-}
 
 .button{
   background: -webkit-linear-gradient(bottom, rgb(168, 94, 25), rgb(249, 189, 37));
