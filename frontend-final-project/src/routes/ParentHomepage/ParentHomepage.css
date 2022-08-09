@@ -1,0 +1,10 @@
+.background-parent-homepage {
+    background-image: url(./images/jungle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,3 +1,4 @@
+/* NAS - I changed root in APP.css and root is also called to here - I removed the root background colour since it conflicted with the night mode on my page */
 :root{
 
     display: flex;

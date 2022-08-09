@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom"
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
-import Layout from "./Layout/Layout.js"
 import { GlobalStyle } from "./Styles/globalStyles.js"
 import { darkTheme, lightTheme } from "./Styles/theme.js"
-import Routing from "./Routing.js";
+import Overview from "./Pages/Overview/OverviewPage.js";
+import WeeklyARPage from "./Pages/WeeklyARPage.js";
+import Support from "./Pages/Support.js";
+import Layout from "./Layout/Layout.js";
+import "./ParentHomepage.css";
+
 
 export const ThemeContext = React.createContext(null);
 
@@ -13,11 +18,11 @@ const ParentHomepage = () => {
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
 
     return (
+        <div className="background-parent-homepage"> 
         <ThemeContext.Provider value={{ setTheme, theme }}>
             <ThemeProvider theme={themeStyle}>
                 <GlobalStyle />
                 <Helmet>
-                    <title>Sidebar - Code Focus</title>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link
@@ -26,12 +31,18 @@ const ParentHomepage = () => {
                     />
                 </Helmet>
                 <>
-                    <Layout>
-                        <Routing />
-                    </Layout>
+                {/* the sub routes in the parent homepage: */}
+                <Layout>
+                <Routes>
+                <Route path="/" element={<Overview />} />
+                <Route path="weekly-activity-report" element={<WeeklyARPage/>} />
+                <Route path="support" element={<Support />} />
+                </Routes>
+                </Layout>
                 </>
             </ThemeProvider>
         </ThemeContext.Provider>
+        </div>
     );
 };
 

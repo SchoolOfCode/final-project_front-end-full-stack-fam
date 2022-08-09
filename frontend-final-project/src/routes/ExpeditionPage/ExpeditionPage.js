@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import LogoutButton from '../../components/Login/LogoutButton';
 import './ExpeditionPage.css'
-import './homeWood.css'
-import button from './homeWood.PNG'
-import woodStop from './woodStop.PNG'
+import './homeHut.css'
+import button from './images/homeHut.png'
+import woodStop from './images/woodStop.PNG'
 import './woodStop.css'
-import rightFoot from './rightFootCol.png'
-import leftFoot from './leftFootCol.png'
+import leftFoot from './images/leftFootCol.png'
+import rightFoot from './images/rightFootCol.png'
+import path from './images/fullPath.png'
 
 
 
@@ -15,14 +16,14 @@ export default function ExpeditionPage() {
 
     return (
      
-      <div>
+      <div className = 'expeditionPage'>
       <div className= 'Expedition'>
 
 <h1 className = 'expeditionH1'>Addition</h1>
 <h2 className = 'expeditionH2'>Are you ready for your next adventure?</h2>
         
-  <div  className = 'Button-container'>
-  <img src={button} className = 'homeWoodButton'/>
+  
+  <img src={button} className = 'homeHutButton'/>
 
 
         <nav>
@@ -33,14 +34,9 @@ export default function ExpeditionPage() {
     
     
    
-    
-
-
-
-
           
-<div class="wrap">
-<div class="upper">
+<div className="wrap">
+<div className="upper">
   <img src={leftFoot} />
   <img src={leftFoot} />
   <img src={leftFoot} />
@@ -51,32 +47,7 @@ export default function ExpeditionPage() {
   <img src={leftFoot} />
   
 </div>
-<div class="lower">
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  
-</div>
-  </div>
-
-  <div class="wrap2">
-<div class="upper2">
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  
-</div>
-<div class="lower2">
+<div className="lower">
   <img src={rightFoot} />
   <img src={rightFoot} />
   <img src={rightFoot} />
@@ -89,40 +60,39 @@ export default function ExpeditionPage() {
 </div>
   </div>
 
-  <div class="wrap3">
-<div class="upper3">
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
-  <img src={leftFoot} />
+ 
   
-</div>
-<div class="lower3">
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  <img src={rightFoot} />
-  
-</div>
-  </div>
+        <img src={woodStop} className = 'woodStop2'/>
+        <img src={woodStop} className = 'woodStop3'/>
+        <img src={woodStop} className = 'woodStop4'/>
+        <img src={woodStop} className = 'woodStop5'/>
+        
+        
+        
+      
+        
+        <button className = 'woodStopButton2'></button>
+        <button className = 'woodStopButton3'></button>
+        <button className = 'woodStopButton4'></button>
+        <button className = 'woodStopButton5'></button>
+       
 
-        <img src={woodStop} className = 'woodStop1'/>
-        <nav>
-          <Link to="/activity-intro"><button className = 'woodStopButton1'></button></Link>
+<img src = {path} className = 'fullPath1'/>
+<img src = {path} className = 'fullPath2'/>
+<img src = {path} className = 'fullPath3'/>
+<img src = {path} className = 'fullPath4'/>
+<img src = {path} className = 'fullPath5'/>
+
+
+  
+  <img src={woodStop} className = 'woodStop1'/>
+  <nav>
+ 
+          <Link to="/activity-intro"><button className = 'woodStopButton1'>Home</button></Link>
         </nav>
-    
+        
+        
+
         
 
         <img src={woodStop} className = 'woodStop2'/>
@@ -134,20 +104,24 @@ export default function ExpeditionPage() {
         
       
         
-        <button oclassName = 'woodStopButton2'></button>
+        <button className = 'woodStopButton2'></button>
         <button className = 'woodStopButton3'></button>
         <button className = 'woodStopButton4'></button>
         <button className = 'woodStopButton5'></button>
        
 
+<img src = {path} className = 'fullPath1'/>
+<img src = {path} className = 'fullPath2'/>
+<img src = {path} className = 'fullPath3'/>
+<img src = {path} className = 'fullPath4'/>
+<img src = {path} className = 'fullPath5'/>
 
-
         
         
-        
+</div>    
 </div>
-        </div>
-        </div>
+       
+       
     
     );
   }

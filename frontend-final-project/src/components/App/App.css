@@ -1,3 +1,11 @@
+/* NAS - I addes this css to make my pages fit the whole screen, since they wete hald before - activity intro pages may have been impacted */
+body > #root {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
 :root{
 
@@ -8,18 +16,6 @@
 
   /*button text color*/
   --btn-txt-clr:  #5F061E;
-}
-
-.App {
-  /* background-image: url(SplitEditWithTitle.jpg); */
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-min-width: 100vh;
-min-height: 100vh;
-
 }
 
 .button{
