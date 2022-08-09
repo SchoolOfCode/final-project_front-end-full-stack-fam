@@ -1,4 +1,4 @@
-.main{
+.main-area{
     width:100vw;
     height:100vh;
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 
-.heading {
+.well-done-h1 {
 
     color:rgb(255, 255, 255);
     font-family: 'Fredoka One', cursive;

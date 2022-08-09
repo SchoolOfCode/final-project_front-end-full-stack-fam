@@ -10,7 +10,7 @@
 
 }
 
-.main{
+.main-area{
 
     display: flex;
     flex-direction: column;
@@ -22,17 +22,31 @@
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    height: 100px;
+    width: 100px;
     
+    border: solid black;
 }
+
 
 .start-button {
-padding: 10px
+
+display: flex;
+padding: 10px;
 
 }
 
 
-.the-card-div {
+.back-button {
+
+display: flex;
+padding: 10px;
+
+
+}
+
+
+.the-card-div-intro {
 
     display: flex;
     flex-direction: column;
@@ -40,10 +54,11 @@ padding: 10px
     justify-content: center;
 
     width: 70vw;
+    height: 20vw;
     
 
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #edca7365
 
 }
 
@@ -51,8 +66,8 @@ padding: 10px
 
 .activity-intro-h1 {
 
+    font-family: 'Fredoka One', sans-serif;
     color:rgb(255, 255, 255);
-    font-family: 'Fredoka One', cursive;
     text-shadow: 2px 2px #E3A200;
     -webkit-text-stroke: 0.001px black;
 
@@ -62,19 +77,23 @@ padding: 10px
 
 .activity-intro-h3 {
 
+    font-family: Quicksand, sans-serif;
     color: #ffffff;
+
     
 }
 
 .activity-intro-descr {
 
-    color: #ffffff;
+    font-family: Quicksand, sans-serif;
     font-size: small;
+    color: #ffffff;
 
 }
 
 .activity-intro-ready {
 
+    font-family: Quicksand, sans-serif;
     color: #ffffff;
 
 }

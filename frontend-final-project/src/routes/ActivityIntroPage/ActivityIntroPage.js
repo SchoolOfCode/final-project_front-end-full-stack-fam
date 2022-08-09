@@ -14,11 +14,11 @@ return(
         <>   
         <LogoutButton/>
          <MySvg className='activity-intro-background-image-daytime'/>
-         <main className= 'main'>
+         <main className= 'main-area'>
 
 
             <h1 className='activity-intro-h1'>Adventure #1</h1>
-            <div className='the-card-div'>
+            <div className='the-card-div-intro'>
             <h3 className='activity-intro-h3'>
                 Collect as much fruit as you can before night time! </h3>
             <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>

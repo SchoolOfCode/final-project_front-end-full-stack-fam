@@ -46,9 +46,9 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 
     return <>
         <LogoutButton/>
-        <main className = "main">
+        <main className = "main-area">
        <MySvgNight className = 'results-background-image-nighttime'/>
-          <h1 className='heading'>Well Done!</h1>
+          <h1 className='well-done-h1'>Well Done!</h1>
           <div className="the-card-div">
         <h2 className='h2-score'>You got {score} correct</h2>
         <h3 className='h3-encouragement'>{theMessage}</h3>

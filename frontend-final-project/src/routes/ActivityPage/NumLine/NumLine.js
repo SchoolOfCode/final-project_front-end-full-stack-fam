@@ -14,7 +14,6 @@ import Timer from './CountdownTimer';
 //  
 // ! - GENERAL FLEX POSITIONING
 
-// comment
 
 export default function NumLine({score, setScore, clicks, setClicks}){
     
@@ -106,7 +105,7 @@ return (
     
             <p className = "score-counter">SCORE: {score}</p>
             
-            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
+            
 
             <section className='button-container'>
                 <button className='submit-button' onClick = {function(){handleClick()}}>check answer</button>

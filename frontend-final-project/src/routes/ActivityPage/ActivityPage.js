@@ -1,5 +1,8 @@
 // import { Link } from 'react-router-dom';
 import LogoutButton from '../../components/Login/LogoutButton';
+
+import Timer from '../ActivityPage/NumLine/CountdownTimer.js';
+
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
 import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
@@ -28,6 +31,7 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
           </div>
           <div className="banana-container">
           <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
+          <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
           </div>
         </main>
         {/* <nav>
