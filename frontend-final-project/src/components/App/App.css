@@ -61,6 +61,7 @@ body > #root {
 button{
   background-color: var(--btn-bg-clr);
   color: var(--btn-txt-clr);
+  font-family: "Quicksand", sans-serif;
   border: none;
   border-radius: 15px;
   font-weight: bold;
@@ -68,6 +69,7 @@ button{
   border: 2px solid #5f061e76;
   cursor: pointer;
   padding: 1%;
+  text-decoration: none;
 }
 
 button:hover{

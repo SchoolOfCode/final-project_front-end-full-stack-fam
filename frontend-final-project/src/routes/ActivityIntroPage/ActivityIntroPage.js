@@ -23,16 +23,16 @@ return(
                 Collect as much fruit as you can before night time! </h3>
             <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
             <h3 className='activity-intro-ready'>Are you ready?</h3>
-            <section className = "button-container">
+            <section className = "the-button-container">
                 <nav>
                     <Link to="/activity">
-                        <button className="start-button">YES</button>
+                        <button className="start-button">Yes!</button>
                     </Link>
                 </nav>
 
                 <nav>
                     <Link to="/expedition">
-                    <button className='back-button'>BACK TO MAP</button>
+                        <button className='back-button'>Back to Map</button>
                     </Link>
                 </nav>
             </section>
