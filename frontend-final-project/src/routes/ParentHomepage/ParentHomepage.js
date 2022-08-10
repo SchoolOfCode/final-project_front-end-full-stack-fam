@@ -21,7 +21,7 @@ const ParentHomepage = () => {
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
     const [userData, setUserData] = useState({})
-    const [activitiesComplete, setActivitiesComplete] = useState()
+    const [attempts, setAttempts] = useState()
     const navigate = useNavigate()
 
    
@@ -35,7 +35,7 @@ const ParentHomepage = () => {
         let data = await response.json();
         console.log(data.payload)
         setUserData(data.payload[0])
-        setActivitiesComplete(data.payload.length)
+        setAttempts(data.payload.length)
       }
       
       useEffect(() => {
@@ -59,7 +59,7 @@ const ParentHomepage = () => {
                 {/* the sub routes in the parent homepage: */}
                 <Layout>
                 <Routes>
-                <Route path="/" element={<Overview userData = {userData} activitiesComplete = {activitiesComplete} />} />
+                <Route path="/" element={<Overview userData = {userData} attempts = {attempts} />} />
                 <Route path="weekly-activity-report" element={<WeeklyARPage/>} />
                 <Route path="support" element={<Support />} />
                 </Routes>
