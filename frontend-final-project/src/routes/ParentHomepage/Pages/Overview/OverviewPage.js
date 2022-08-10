@@ -4,7 +4,7 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { TbMathSymbols } from "react-icons/tb";
 import BasicTabs from "./Tabs/Tabs";
 
-const Support = () => {
+const Overview = ({userData}) => {
   return (
     <div className="body-overview-page">
       {/* font size on h1 would not change so I made the heading a h2 instead */}
@@ -16,9 +16,9 @@ const Support = () => {
             {" "}
             <IoPersonCircleOutline /> Student Profile{" "}
           </h2>
-          <h4> Name: </h4>
-          <h4> Activities Completed: </h4>
-          <h4> Progress to yearly target: </h4>
+          <h4> Name: {userData[0].name} </h4>
+          <h4> Activities Completed: {userData.length} </h4>
+          <h4> Progress to yearly target: 10%- hardcoded?</h4>
         </div>
 
         <div class="grid-topics">
@@ -43,4 +43,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Overview;

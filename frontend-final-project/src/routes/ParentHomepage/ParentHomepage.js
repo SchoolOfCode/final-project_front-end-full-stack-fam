@@ -19,18 +19,17 @@ const ParentHomepage = () => {
     const {user} = useAuth0()
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
+    const [userData, setUserData] = useState({})
 
     async function getChildDataByEmail() {
         let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
         let data = await response.json();
-        console.log(data)
+        setUserData(data.payload)
       }
       
       useEffect(() => {
       getChildDataByEmail();
       }, []);
-
-    console.log(user.email)
 
     return (
         <div className="background-parent-homepage"> 
@@ -49,7 +48,7 @@ const ParentHomepage = () => {
                 {/* the sub routes in the parent homepage: */}
                 <Layout>
                 <Routes>
-                <Route path="/" element={<Overview />} />
+                <Route path="/" element={<Overview userData = {userData} />} />
                 <Route path="weekly-activity-report" element={<WeeklyARPage/>} />
                 <Route path="support" element={<Support />} />
                 </Routes>
