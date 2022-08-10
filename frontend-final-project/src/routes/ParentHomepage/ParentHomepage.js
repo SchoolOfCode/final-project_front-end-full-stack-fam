@@ -10,21 +10,32 @@ import Support from "./Pages/Support.js";
 import Layout from "./Layout/Layout.js";
 import "./ParentHomepage.css";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useNavigate } from "react-router-dom"
 
 
 export const ThemeContext = React.createContext(null);
 
 
 const ParentHomepage = () => {
-    const {user} = useAuth0()
+    const { user, isAuthenticated } = useAuth0()
     const [theme, setTheme] = useState("light");
     const themeStyle = theme === "light" ? lightTheme : darkTheme;
     const [userData, setUserData] = useState({})
+    const [activitiesComplete, setActivitiesComplete] = useState()
+    const navigate = useNavigate()
+
+   
+    //If the user is not logged in, automatically redirects back to landing page.
+    if(!isAuthenticated) {
+    navigate("/");
+    }
 
     async function getChildDataByEmail() {
         let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
         let data = await response.json();
-        setUserData(data.payload)
+        console.log(data.payload)
+        setUserData(data.payload[0])
+        setActivitiesComplete(data.payload.length)
       }
       
       useEffect(() => {
@@ -48,7 +59,7 @@ const ParentHomepage = () => {
                 {/* the sub routes in the parent homepage: */}
                 <Layout>
                 <Routes>
-                <Route path="/" element={<Overview userData = {userData} />} />
+                <Route path="/" element={<Overview userData = {userData} activitiesComplete = {activitiesComplete} />} />
                 <Route path="weekly-activity-report" element={<WeeklyARPage/>} />
                 <Route path="support" element={<Support />} />
                 </Routes>
