@@ -6,7 +6,7 @@ import CircularDeterminate from '../CircularDeterminate';
 import { useEffect } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 
-export default function ResultsPage({score, clicks, setPercentageState , percentageState, childData, setChildData}) {
+export default function ResultsPage({score, clicks, setPercentageState , percentageState, childName, setChildName}) {
   //NAS AND NOAH PUT THIS HERE
   const {user, isAuthenticated} = useAuth0()
 
@@ -45,45 +45,54 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
       theMessage = messageEncouragement.lowScore;
     };
 
-    //Nas n Noah's Post Request Corner 
+//POST REQUEST FUNCTIONALITY
 
-    
+  //Takes currently authenitcated user's email, uses it to find child's name.
     async function getChildDataByEmail() {
       let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
       let data = await response.json();
-      setChildData(data.payload[0].name)
-      console.log(data.payload[0].name)
+      setChildName(data.payload[0].name)
+      console.log(`Name of student is ${data.payload[0].name}`)
     }
     
     useEffect(() => {
       if(isAuthenticated){
-        console.log(user.email)
+        console.log(`logged in as ${user.email}`)
         getChildDataByEmail();
       }
     }, []);
   
-    const child = childData
+  //Takes score from activity, child's name, current date and time, and posts new row to child table
+    async function postResults(){
 
-    // async function postResults(){
+      // let date = new Date()
+      // let currentDate = date.toDateString()
+      // console.log(currentDate)
 
-    //   let response = await fetch("https://fullstack-fam.herokuapp.com/child", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(  {
-    //       name: "lilly",
-    //       scoreone: {score},
-    //       timecompleted: '00:00:00',
-    //       datecompleted: '2011-05-03 '
-    //   },),
-    //   });
+      let response = await fetch("https://fullstack-fam.herokuapp.com/child", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(  {
+          name: childName,
+          scoreone: score,
+          timecompleted: '24:30:00',
+          datecompleted: '2035-08-10'
+      },),
+      });
 
-    //   const data = await response.json();
-    //   const info = data.payload[0].student_id;
-    //   console.log("sucess!")
+      const data = await response.json();
+      console.log(`successfully posted to the backend! WOOHOO`)
 
-    // }
+    }
+
+    useEffect(() => {
+      if(isAuthenticated){
+        console.log('POSTING TO BACKEND')
+        postResults();
+      }
+    }, []);
 
     return <>
         <LogoutButton/>
@@ -107,7 +116,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
           </nav>
           <nav>
             <Link to="/activity-intro">
-              <button className = "retry-button">Try Again {child}</button>
+              <button className = "retry-button">Try Again</button>
             </Link>
           </nav>
           </div>

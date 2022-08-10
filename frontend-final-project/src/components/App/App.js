@@ -21,7 +21,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [clicks, setClicks] = useState(0);
   const [percentageState , setPercentageState] = useState(0);
-  const [childData, setChildData] = useState();
+  const [childName, setChildName] = useState();
   const [parentData, setparentData] = useState();
 
 
@@ -54,7 +54,7 @@ getDataParent();
       {/* <LoginButton /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<LoginPage childData={childData} setChildData = {setChildData}/>} />
+        <Route path="login" element={<LoginPage childName = {childName} setChildName = {setChildName}/>} />
         <Route path="signup" element={<SignupPage />} />
         <Route path="parent/*" element={<ParentHomepage />} />
         <Route path="post" element={<PostRequest />} />
@@ -69,7 +69,7 @@ getDataParent();
           <ActivityPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} percentageState = {percentageState} setPercentageState = {setPercentageState}/>} />
           
         <Route path="results" element={
-          <ResultsPage score= {score} clicks = {clicks} percentageState = {percentageState} setPercentageState = {setPercentageState} childData = {childData} setChildData = {setChildData}/>} />
+          <ResultsPage score= {score} clicks = {clicks} percentageState = {percentageState} setPercentageState = {setPercentageState} childName = {childName} setChildName = {setChildName}/>} />
 
       </Routes>
     </div>
