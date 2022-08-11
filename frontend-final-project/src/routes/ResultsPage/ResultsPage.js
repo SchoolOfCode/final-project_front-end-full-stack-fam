@@ -78,7 +78,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
         },
         body: JSON.stringify(  {
           name: childName,
-          scoreone: score,
+          scoreone: scorePercent,
           timecompleted: currentTime,
           datecompleted: currentDate
       },),
