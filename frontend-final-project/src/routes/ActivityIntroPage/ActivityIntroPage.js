@@ -9,7 +9,13 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks , 
     setClicks(0);
     setMismatch(0);
 
+    const descr1 = "Take a look at this number line:"
     
+    const descr2 = "- 2 - 4 - 6 - 8 - 10 - 12 - 14 - 16 - 18 - 20 -"
+
+    const descr3 = "YOUR CHALLENGE: some of these numbers will be missing; can you fill them in?"
+
+
 return(
         <>   
         <LogoutButton/>
@@ -29,19 +35,21 @@ return(
             
                 <h3 className='activity-intro-h3'>
                     Collect as much fruit as you can before night time! </h3>
-                <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
+                <p className='activity-intro-descr'>{descr1}</p>
+                <p className='activity-intro-descr'>{descr2}</p>
+                <p className='activity-intro-descr'>{descr3}</p>
                 <h3 className='activity-intro-ready'>Are you ready?</h3>
 
                 <section className = "the-button-container">
                     <nav>
                         <Link to="/activity">
-                            <button className="start-button">Yes!</button>
+                            <button className="start-button-intro">Yes!</button>
                         </Link>
                     </nav>
 
                     <nav>
                         <Link to="/expedition">
-                            <button className='back-button'>Back to Map</button>
+                            <button className='back-button-intro'>Back to Map</button>
                         </Link>
                     </nav>
 
