@@ -5,7 +5,7 @@ import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import CircularDeterminate from '../CircularDeterminate';
 
 
-export default function ResultsPage({score, clicks, setPercentageState , percentageState}) {
+export default function ResultsPage({score, clicks, setPercentageState , percentageState , mismatch , setMismatch}) {
   
 
 
@@ -25,7 +25,9 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 
 
 // calculating the percentage of correct answers (scorePercent) from states: score & clicks
-  let scorePercent = Math.floor((score / clicks) * 100)
+const totalDone = score + mismatch
+
+let scorePercent = Math.floor((score / totalDone) * 100)
     if (isNaN(scorePercent)) {
       scorePercent = 0;
     };

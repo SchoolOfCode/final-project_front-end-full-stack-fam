@@ -2,19 +2,18 @@ import './NumLine.css'
 import { useState, useEffect } from 'react';
 import Timer from './CountdownTimer';
 
-export default function NumLine({score, setScore, clicks, setClicks}){
+export default function NumLine({score, setScore, clicks, setClicks, mismatch, setMismatch}) {
     
     //SETTING OUR DEFAULT STATES: GENERATED NUM & PREV GENERATED NUM
     const[answer, setAnswer] = useState("");
     const [prevAnsw, setPrevAnsw] = useState("");
 
-    //const [buttonState , setButtonState] = useState(false);
 
     //ASSIGNING ARRAY VALUES & CALCULATING A RANDOM WHOLE NUM
     let array = ['2','4','6','8','10','12','14','16','18','20']
     let ranNum = Math.floor(Math.random() * 10)
     //let isAnonymous = true;
-
+    
 
     //THIS CHECKS THE NUMBER DOESNT REPEAT TWO TIMES IN A ROW & RECALCUATES IF SO
     function checkRanNum() {
@@ -25,6 +24,7 @@ export default function NumLine({score, setScore, clicks, setClicks}){
         };
         return ranNum
     }
+
 
     // CALLS THE NUMBER CHECKING FUNCTION
         checkRanNum();
@@ -48,16 +48,8 @@ export default function NumLine({score, setScore, clicks, setClicks}){
         const input = document.querySelector(".num-input");
         console.log(input.value)
 
-        //event.currentTarget.disabled = true;
-        //console.log('button clicked');
-
         console.log(`answer is ${answer}`)
         const inputValue = (input.value);
-
-        //if (typeof inputValue == "string") {
-        //   setButtonState(true)
-        // }
-
 
         if(inputValue === answer){
           console.log('number matches!');
@@ -66,12 +58,12 @@ export default function NumLine({score, setScore, clicks, setClicks}){
             setPrevAnsw(ranNum);
             setAnswer('');
         }
-        else if (inputValue !== answer){
+        else if (inputValue !== answer && inputValue !== ''){
             console.log('not quite, try again!')
             setClicks(clicks +1)
+            setMismatch(mismatch + 1);
         }
       }
-
 
 
 return (

@@ -3,13 +3,13 @@ import LogoutButton from '../../components/Login/LogoutButton';
 import { ReactComponent as MySvg} from '../../daytime-jungle.svg';
 import './ActivityIntroPage.css'
 
-export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
+export default function ActivityIntroPage({score, setScore, clicks, setClicks , mismatch , setMismatch}){
 
     setScore(0);
     setClicks(0);
+    setMismatch(0);
 
-
-
+    
 return(
         <>   
         <LogoutButton/>

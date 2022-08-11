@@ -9,7 +9,7 @@ import NumLine from './NumLine/NumLine';
 import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
 import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 
-export default function ActivityPage({score, setScore, clicks ,setClicks}) {
+export default function ActivityPage({score, setScore, clicks , setClicks , mismatch , setMismatch}) {
     
 
   return (
@@ -28,13 +28,13 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
           <div className='the-card-div-activity'>
             <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
             <div className='num-line-container'>
-                <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>
+                <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} mismatch = {mismatch} setMismatch = {setMismatch}/>
               </div>
           </div>
 
           <div className="banana-container">
             <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
-            <p className = "score-counter">SCORE: {score}</p> 
+            <p className = "score-counter">SCORE: {score} WRONG: {mismatch}</p> 
           </div>
  
         </main>
