@@ -26,13 +26,13 @@ const Overview = ({userData, attempts}) => {
             {" "}
             <TbMathSymbols /> Topics{" "}
           </h2>
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-            dolorem deserunt minus error earum, labore perspiciatis repellendus
-            porro laborum aspernatur reprehenderit quia ducimus officia
-            distinctio incidunt maiores explicabo suscipit optio!{" "}
-          </p>
+          <h4> Number and place value </h4>
+          <h4> Addition and subtraction </h4>
+          <h4> Multiplication and division </h4>
+          <h4> Fractions </h4>
+          <h4> Measurements </h4>
+          <h4> Geometry </h4>
+          <h4> Statistics </h4>
         </div>
 
         <div class="basic-tabs">
