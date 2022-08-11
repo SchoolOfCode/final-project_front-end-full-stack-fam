@@ -2,6 +2,7 @@
     /* position: fixed; */
     /* left: 100%; */
     top: 40%;
+    height: 100vh;
     /* transform: translate(-50%, -50%);  */
 
 }
@@ -15,12 +16,11 @@ grid-template-areas:
 padding: 10px;
 margin-left: 50%; */
 margin-left: 45%;
-
 }
 
 .grid-weekly-profile {
   width: 750px;
-  height: 850px;
+  height: 90vh;
   border: solid #4f9071 5px;
   padding: 25px;
   border-radius: 25px;

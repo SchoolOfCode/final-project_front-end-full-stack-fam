@@ -20,7 +20,7 @@
   grid-gap: 1%; */
   /* position: fixed; */
   /* justify-items: center; */
-
+  margin-top: 15%;
   display: grid;
   grid-template-areas:
     "bodyLeft bodyRight"
