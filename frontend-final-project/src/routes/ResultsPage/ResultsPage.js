@@ -65,9 +65,9 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
   //Takes score from activity, child's name, current date and time, and posts new row to child table
     async function postResults(){
 
-      // let date = new Date()
-      // let currentDate = date.toDateString()
-      // console.log(currentDate)
+      let date = new Date()
+      let currentDate = date.toDateString()
+      console.log(currentDate)
 
       let response = await fetch("https://fullstack-fam.herokuapp.com/child", {
         method: "POST",
@@ -78,7 +78,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
           name: childName,
           scoreone: score,
           timecompleted: '24:30:00',
-          datecompleted: '2035-08-10'
+          datecompleted: currentDate
       },),
       });
 
