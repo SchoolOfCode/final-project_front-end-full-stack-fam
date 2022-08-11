@@ -7,17 +7,19 @@
 }
 
 .grid-container-weekly {
- display: grid;
+ /* display: flex;
 grid-template-areas:
      "bodyLeft bodyRight"
      "head head";
  gap: 10px;
 padding: 10px;
-margin-left: 90%;
+margin-left: 50%; */
+margin-left: 45%;
+
 }
 
 .grid-weekly-profile {
-  width: 400px;
+  width: 750px;
   height: 850px;
   border: solid #4f9071 5px;
   padding: 25px;
@@ -25,4 +27,5 @@ margin-left: 90%;
   background-color: #d9d9d9;
   line-height: 3.5;
   grid-area: bodyLeft;
+  overflow: scroll;
 } 

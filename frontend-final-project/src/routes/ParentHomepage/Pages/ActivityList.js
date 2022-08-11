@@ -7,7 +7,11 @@ const ActivityList = ( {activityList}) => {
         <ul className="activity-list">
            { activityList.map(function(item)
            {
-               return <li> Score: {item.scoreone}% </li>
+               return <li>
+                {item.datecompleted}
+                <br/>
+                {item.name} completed 'Number Line' at {item.timecompleted} with a score of {item.scoreone}%
+                </li>
            }
            )} 
         </ul>
