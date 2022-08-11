@@ -1,0 +1,28 @@
+.body-weekly-page {
+    /* position: fixed; */
+    /* left: 100%; */
+    top: 40%;
+    /* transform: translate(-50%, -50%);  */
+
+}
+
+.grid-container-weekly {
+ display: grid;
+grid-template-areas:
+     "bodyLeft bodyRight"
+     "head head";
+ gap: 10px;
+padding: 10px;
+margin-left: 90%;
+}
+
+.grid-weekly-profile {
+  width: 400px;
+  height: 300px;
+  border: solid #4f9071 5px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  line-height: 3.5;
+  grid-area: bodyLeft;
+} 

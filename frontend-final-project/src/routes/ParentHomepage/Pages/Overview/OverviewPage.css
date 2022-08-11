@@ -5,15 +5,14 @@
   transform: translate(-50%, -50%);
 }
 
-.overview-heading {
+/* .overview-heading {
   font-size: 100px;
   font-family: "Fredoka One", cursive;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px #e3a200;
-  -webkit-text-stroke: 0.2px black;
+  -webkit-text-stroke: 0.01px black;
   text-align: center;
   /* margin-top: -70%; */
-}
 
 .grid-container-overview {
   /* display: grid;
@@ -58,6 +57,7 @@
   /* margin-left: 70%; */
   justify-items: center;
   grid-area: bodyRight;
+  
 }
 
 .basic-tabs {
@@ -73,5 +73,20 @@
 
 .subheadings-overview {
   font-size: 25px;
-  text-align: center;
+  margin-top: -10%;
+  font-family: Quicksand, sans-serif;
+}
+
+.subheadings-topics {
+  font-family: Quicksand, sans-serif;
+}
+.form-text {
+  font-size: 19px;
+  line-height: 160%;
+  font-family: Quicksand, sans-serif;
+}
+
+.profile-font {
+  font-family: Quicksand, sans-serif;
+  font-size: 19px;
 }

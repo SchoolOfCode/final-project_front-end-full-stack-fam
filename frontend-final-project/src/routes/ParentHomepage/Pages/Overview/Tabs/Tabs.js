@@ -55,14 +55,16 @@ export default function BasicTabs({userData, attempts}) {
           <Tab label="Awards" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
-        <h4> Activity Name: Number and place value </h4>
+      <TabPanel value={value} index={0} >
+        <div className="tab-font">
+        <h4 > Activity Name: Number Line</h4>
         <> </>
         <h4> Student Name: {userData.name} </h4>
-        <h4> Score: {userData.scoreone} </h4>
+        <h4> Score: {userData.scoreone} % </h4>
         <h4> Attempts: {attempts} </h4>
         <h4> Date Completed: {userData.datecompleted} </h4>
         <h4> Time Completed: {userData.timecompleted} </h4>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
       <h4> Set Task (?): </h4>

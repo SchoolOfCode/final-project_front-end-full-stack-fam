@@ -23,18 +23,20 @@ const ParentHomepage = () => {
     const [userData, setUserData] = useState({})
     const [attempts, setAttempts] = useState()
     const navigate = useNavigate()
+    const [activityList, setActivityList] = useState([])
 
    
     //If the user is not logged in, automatically redirects back to landing page.
-    if(!isAuthenticated) {
-    navigate("/");
-    }
+    // if(!isAuthenticated) {
+    // navigate("/");
+    // }
 
     async function getChildDataByEmail() {
         let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
         let data = await response.json();
         console.log(data.payload)
-        setUserData(data.payload[0])
+        setActivityList(data.payload)
+        setUserData(data.payload[(data.payload.length)-1])
         setAttempts(data.payload.length)
       }
       
@@ -60,7 +62,7 @@ const ParentHomepage = () => {
                 <Layout>
                 <Routes>
                 <Route path="/" element={<Overview userData = {userData} attempts = {attempts} />} />
-                <Route path="weekly-activity-report" element={<WeeklyARPage/>} />
+                <Route path="weekly-activity-report" element={<WeeklyARPage activityList = {activityList}/>} />
                 <Route path="support" element={<Support />} />
                 </Routes>
                 </Layout>
