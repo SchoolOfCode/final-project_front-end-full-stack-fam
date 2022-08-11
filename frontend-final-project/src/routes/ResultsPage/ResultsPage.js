@@ -67,7 +67,9 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 
       let date = new Date()
       let currentDate = date.toDateString()
+      let currentTime = date.toLocaleTimeString()
       console.log(currentDate)
+      console.log(currentTime)
 
       let response = await fetch("https://fullstack-fam.herokuapp.com/child", {
         method: "POST",
@@ -77,7 +79,7 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
         body: JSON.stringify(  {
           name: childName,
           scoreone: score,
-          timecompleted: '24:30:00',
+          timecompleted: currentTime,
           datecompleted: currentDate
       },),
       });
