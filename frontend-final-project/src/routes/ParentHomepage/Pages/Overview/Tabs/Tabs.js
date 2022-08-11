@@ -50,7 +50,7 @@ export default function BasicTabs({userData, attempts}) {
     <Box sx={{ width: '100%' }} className="box-border-tabs">
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Activity" {...a11yProps(0)} />
+          <Tab label=" Recent Activity" {...a11yProps(0)} />
           <Tab label="Tasks" {...a11yProps(1)} />
           <Tab label="Awards" {...a11yProps(2)} />
         </Tabs>
