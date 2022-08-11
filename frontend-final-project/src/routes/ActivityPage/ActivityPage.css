@@ -97,17 +97,6 @@
 
 }
 
-.the-countdown-container {
-
-        width: 60px;
-        height: 50vh;
-        
-        border: solid #1900ff4c 3px;
-        border-radius: 25px;
-        background-color: #51bfce3f;
-
-}
-
 
 .num-grid {
     display: grid;
@@ -167,14 +156,12 @@ p {
 
 
 
-.the-new-progress {
+.the-invisible-timer {
 
-    colorPrimary: black;
-    colorSecondary: red;
+    border: solid black;
+    visibility: hidden;
 
 }
-
-
 
 
 .activity-background-image-daytime {

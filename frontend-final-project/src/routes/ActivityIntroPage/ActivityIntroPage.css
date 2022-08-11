@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
 
 }
 
@@ -26,6 +27,7 @@
     justify-content: space-around;
     height: 10vh;
     width: 70vw;
+    
 
 }
 
@@ -59,7 +61,7 @@ padding: 10px;
     
 
     border-radius: 25px;
-    background-color: #edca7365
+    background-color: #edca7365;
 
 }
 

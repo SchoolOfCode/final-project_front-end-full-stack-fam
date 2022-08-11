@@ -26,23 +26,27 @@ return(
 
 
             <div className='the-card-div-intro'>
-            <h3 className='activity-intro-h3'>
-                Collect as much fruit as you can before night time! </h3>
-            <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
-            <h3 className='activity-intro-ready'>Are you ready?</h3>
-            <section className = "the-button-container">
-                <nav>
-                    <Link to="/activity">
-                        <button className="start-button">Yes!</button>
-                    </Link>
-                </nav>
+            
+                <h3 className='activity-intro-h3'>
+                    Collect as much fruit as you can before night time! </h3>
+                <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
+                <h3 className='activity-intro-ready'>Are you ready?</h3>
 
-                <nav>
-                    <Link to="/expedition">
-                        <button className='back-button'>Back to Map</button>
-                    </Link>
-                </nav>
-            </section>
+                <section className = "the-button-container">
+                    <nav>
+                        <Link to="/activity">
+                            <button className="start-button">Yes!</button>
+                        </Link>
+                    </nav>
+
+                    <nav>
+                        <Link to="/expedition">
+                            <button className='back-button'>Back to Map</button>
+                        </Link>
+                    </nav>
+
+                </section>
+
             </div>
             
         </main>

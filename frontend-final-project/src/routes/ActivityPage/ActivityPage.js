@@ -36,14 +36,12 @@ export default function ActivityPage({score, setScore, clicks ,setClicks}) {
             <img src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
             <p className = "score-counter">SCORE: {score}</p> 
           </div>
-
-          <div className='the-countdown-container'>
-            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
-            
-          </div>
-
-
+ 
         </main>
+        
+          <div className="the-invisible-timer">
+            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
+          </div>
 
         {/* <nav>
           <Link to="/login">Back to Log In</Link>
