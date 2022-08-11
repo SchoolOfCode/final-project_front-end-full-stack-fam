@@ -91,12 +91,25 @@
     width: 60px;
     height: 50vh;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
     border: solid #1900ff4c 3px;
     border-radius: 25px;
     background-color: #51bfce3f;
 
 }
 
+
+.the-score-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .num-grid {
     display: grid;
@@ -150,7 +163,8 @@ p {
 
 .score-counter {
 
-    color: #ffffff
+    color: #ffffff;
+    font-size: small; 
     
     }
 
