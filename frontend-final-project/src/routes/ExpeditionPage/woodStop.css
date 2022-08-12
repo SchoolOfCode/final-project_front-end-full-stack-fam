@@ -1,12 +1,13 @@
 
-.woodStop1{
-    position:absolute; top:55%; left:17%;
-    max-width: 5%;
-    
+.stop1{
+width: 100vw;
+height: 100vh;
 }
 
+
+
 .woodStopButton1{
-    position:absolute; top:53%; left:12%;
+    position:absolute; top:43%; left:8%;
     cursor: pointer;
     border: 40px solid transparent;
     border-radius: 40px;
@@ -131,3 +132,8 @@
     background-color: transparent;
     color:transparent;
 }
+
+
+
+
+
