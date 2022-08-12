@@ -3,39 +3,58 @@ import LogoutButton from '../../components/Login/LogoutButton';
 import { ReactComponent as MySvg} from '../../daytime-jungle.svg';
 import './ActivityIntroPage.css'
 
-export default function ActivityIntroPage({score, setScore, clicks, setClicks}){
+export default function ActivityIntroPage({score, setScore, clicks, setClicks , mismatch , setMismatch}){
 
     setScore(0);
     setClicks(0);
+    setMismatch(0);
 
-// not a comment
+    const descr1 = "Take a look at this number line:"
+    
+    const descr2 = "- 2 - 4 - 6 - 8 - 10 - 12 - 14 - 16 - 18 - 20 -"
+
+    const descr3 = "YOUR CHALLENGE: some of these numbers will be missing; can you fill them in?"
+
 
 return(
         <>   
         <LogoutButton/>
          <MySvg className='activity-intro-background-image-daytime'/>
-         <main className= 'main'>
+         <main className= 'main-area'>
 
 
-            <h1 className='activity-intro-h1'>Adventure #1</h1>
-            <div className='the-card-div'>
-            <h3 className='activity-intro-h3'>
-                Collect as much fruit as you can before night time! </h3>
-            <p className='activity-intro-descr'> * this is the description of the activity / maths stuff * </p>
-            <h3 className='activity-intro-ready'>Are you ready?</h3>
-            <section className = "button-container">
-                <nav>
-                    <Link to="/activity">
-                        <button className="start-button">YES</button>
-                    </Link>
-                </nav>
+            <div className='the-title-text-area'>
 
-                <nav>
-                    <Link to="/expedition">
-                    <button className='back-button'>BACK TO MAP</button>
-                    </Link>
-                </nav>
-            </section>
+                <p className='the-activity-number'>Adventure #1 :</p>
+                <h1 className='activity-intro-h1'>Number Line</h1>
+
+            </div>    
+
+
+            <div className='the-card-div-intro'>
+            
+                <h3 className='activity-intro-h3'>
+                    Collect as much fruit as you can before night time! </h3>
+                <p className='activity-intro-descr'>{descr1}</p>
+                <p className='activity-intro-descr'>{descr2}</p>
+                <p className='activity-intro-descr'>{descr3}</p>
+                <h3 className='activity-intro-ready'>Are you ready?</h3>
+
+                <section className = "the-button-container">
+                    <nav>
+                        <Link to="/activity">
+                            <button className="start-button-intro">Yes!</button>
+                        </Link>
+                    </nav>
+
+                    <nav>
+                        <Link to="/expedition">
+                            <button className='back-button-intro'>Back to Map</button>
+                        </Link>
+                    </nav>
+
+                </section>
+
             </div>
             
         </main>

@@ -5,7 +5,7 @@ import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import CircularDeterminate from '../CircularDeterminate';
 
 
-export default function ResultsPage({score, clicks, setPercentageState , percentageState}) {
+export default function ResultsPage({score, clicks, setPercentageState , percentageState , mismatch , setMismatch}) {
   
 
 
@@ -25,7 +25,9 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 
 
 // calculating the percentage of correct answers (scorePercent) from states: score & clicks
-  let scorePercent = Math.floor((score / clicks) * 100)
+const totalDone = score + mismatch
+
+let scorePercent = Math.floor((score / totalDone) * 100)
     if (isNaN(scorePercent)) {
       scorePercent = 0;
     };
@@ -46,19 +48,29 @@ export default function ResultsPage({score, clicks, setPercentageState , percent
 
     return <>
         <LogoutButton/>
-        <main className = "main">
+        <main className = "main-area">
        <MySvgNight className = 'results-background-image-nighttime'/>
-          <h1 className='heading'>Well Done!</h1>
+          <h1 className='well-done-h1'>Well Done!</h1>
           <div className="the-card-div">
         <h2 className='h2-score'>You got {score} correct</h2>
         <h3 className='h3-encouragement'>{theMessage}</h3>
-        <CircularDeterminate score={score} percentageState={percentageState}/>
+
+        <div className='the-score-badge'>
+          <CircularDeterminate score={score} percentageState={percentageState}/>
+
+          <img className='the-banana-itself' src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
+
+        </div>
+
+        <div className='score-percentage-container'>
+
+          <h3 className='h3-percentage'>{scorePercent}%</h3>
+
+        </div>
 
 
-        <h3 className='h3-percentage'>{scorePercent}%</h3>
-        <img src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
 
-        <div className='button-container'>
+        <div className='button-container-results'>
           <nav>
             <Link to="/expedition">
               <button className = "map-button">Back to Map</button>

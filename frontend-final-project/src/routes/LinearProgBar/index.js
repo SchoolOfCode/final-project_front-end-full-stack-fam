@@ -1,20 +1,19 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
-import CircularProgress from '@mui/material/CircularProgress';
+import { LinearProgress } from '@mui/material';
 import { createTheme , ThemeProvider } from '@mui/material/styles';
 
-// no comment
+// 10pm: THE PROGRESS BAR: SEE CountdownTimer.js FOR NOTES
 
 
 const theme = createTheme({ palette: {
-    primary: { main : "#F1B728"},
-    zIndex: "7"
+    primary: { main : "#F1B"},
 
    } })
 
 
 
-export default function CircularDeterminate({percentageState}) {
+export default function LinearProgBar({percentageState}) {
 
   const [progress, setProgress] = React.useState(0);
 
@@ -34,9 +33,9 @@ export default function CircularDeterminate({percentageState}) {
   return (
     
     <ThemeProvider theme={theme}>
-    <Stack className='circular-determinate' spacing={2} direction="row">
+    <Stack className='linear-prog-bar' spacing={2} direction="row">
       
-      <CircularProgress variant="determinate" value={progress} 
+      <LinearProgress variant="determinate" value={progress} 
         style={{position: 'relative', zIndex: '1'}}
       />
     
