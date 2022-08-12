@@ -20,6 +20,7 @@ function App() {
   //We are setting this state at the top level so it can be drilled down to both the activity and the results page
   const [score, setScore] = useState(0);
   const [clicks, setClicks] = useState(0);
+  const [mismatch , setMismatch] = useState(0);
   const [percentageState , setPercentageState] = useState(0);
   const [childName, setChildName] = useState();
   const [parentData, setparentData] = useState();
@@ -63,13 +64,14 @@ getDataParent();
         {/* this new route has been created- a page before the activity to explain
         how the activity works + reset the score */}
         <Route path="activity-intro" element={
-          <ActivityIntroPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks}/>} />
+          <ActivityIntroPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} mismatch={mismatch} setMismatch={setMismatch}/>} />
 
         <Route path="activity" element={
-          <ActivityPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} percentageState = {percentageState} setPercentageState = {setPercentageState}/>} />
+          <ActivityPage score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} percentageState = {percentageState} setPercentageState = {setPercentageState} mismatch={mismatch} setMismatch={setMismatch}/>} />
           
         <Route path="results" element={
-          <ResultsPage score= {score} clicks = {clicks} percentageState = {percentageState} setPercentageState = {setPercentageState} childName = {childName} setChildName = {setChildName}/>} />
+      
+          <ResultsPage score= {score} clicks = {clicks} percentageState = {percentageState} setPercentageState = {setPercentageState} mismatch={mismatch} setMismatch={setMismatch} childName = {childName} setChildName = {setChildName} />} />
 
       </Routes>
     </div>
