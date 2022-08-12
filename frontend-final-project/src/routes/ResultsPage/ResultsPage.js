@@ -3,10 +3,12 @@ import LogoutButton from '../../components/Login/LogoutButton';
 import './ResultsPage.css';
 import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import CircularDeterminate from '../CircularDeterminate';
+import { useEffect } from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
 
 
-export default function ResultsPage({score, clicks, setPercentageState , percentageState , mismatch , setMismatch}) {
-  
+export default function ResultsPage({score, clicks, setPercentageState , percentageState , mismatch , setMismatch, childName, setChildName}) {
+const {user, isAuthenticated} = useAuth0() 
 
 
   let theMessage = "";
@@ -45,6 +47,57 @@ let scorePercent = Math.floor((score / totalDone) * 100)
     } else {
       theMessage = messageEncouragement.lowScore;
     };
+
+//POST REQUEST FUNCTIONALITY
+
+  //Takes currently authenitcated user's email, uses it to find child's name.
+    async function getChildDataByEmail() {
+      let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
+      let data = await response.json();
+      setChildName(data.payload[0].name)
+      console.log(`Name of student is ${data.payload[0].name}`)
+    }
+    
+    useEffect(() => {
+      if(isAuthenticated){
+        console.log(`logged in as ${user.email}`)
+        getChildDataByEmail();
+      }
+    }, []);
+  
+  //Takes score from activity, child's name, current date and time, and posts new row to child table
+    async function postResults(){
+
+      let date = new Date()
+      let currentDate = date.toDateString()
+      let currentTime = date.toLocaleTimeString()
+      console.log(currentDate)
+      console.log(currentTime)
+
+      let response = await fetch("https://fullstack-fam.herokuapp.com/child", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(  {
+          name: childName,
+          scoreone: scorePercent,
+          timecompleted: currentTime,
+          datecompleted: currentDate
+      },),
+      });
+
+      const data = await response.json();
+      console.log(`successfully posted to the backend! WOOHOO`)
+
+    }
+
+    useEffect(() => {
+      if(isAuthenticated){
+        console.log('POSTING TO BACKEND')
+        postResults();
+      }
+    }, []);
 
     return <>
         <LogoutButton/>
