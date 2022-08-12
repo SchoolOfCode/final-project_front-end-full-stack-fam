@@ -15,7 +15,7 @@ export default function ActivityIntroPage({score, setScore, clicks, setClicks , 
 
     const descr3 = "YOUR CHALLENGE: some of these numbers will be missing; can you fill them in?"
 
-
+// no comment
 return(
         <>   
         <LogoutButton/>
