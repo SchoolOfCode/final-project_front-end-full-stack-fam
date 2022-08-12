@@ -46,9 +46,9 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
           </div>
 
           <div className="banana-container">
-            <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
-            <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
-            <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="50" height="50"></img>
+            <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
+            <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
+            <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
           </div>
         </main>
         

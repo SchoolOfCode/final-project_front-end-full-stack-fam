@@ -27,7 +27,6 @@
     justify-content: space-around;
     height: 10vh;
     width: 70vw;
-    
 
 }
 
@@ -35,7 +34,8 @@
 .start-button-intro {
 
 display: flex;
-padding: 10px 25px;
+padding: 25% 65%;
+font-size: 150%;
 text-decoration: none;
 
 }
@@ -43,8 +43,14 @@ text-decoration: none;
 
 .back-button-intro {
 
-display: flex;
-padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 60px;
+    font-size: 130%;
+    text-decoration: none;
 
 
 }
@@ -57,7 +63,7 @@ padding: 10px;
     align-items: center;
     justify-content: space-around;
 
-    width: 80vw;
+    width: 55vw;
     height: 30vw;
     
 
@@ -69,6 +75,9 @@ padding: 10px;
 
 .the-activity-number {
 
+    font-size: 5vh;
+
+
     font-family: 'Fredoka One', sans-serif;
     color:rgb(255, 255, 255);
     -webkit-text-stroke: 0.5px black;
@@ -77,6 +86,9 @@ padding: 10px;
 
 
 .activity-intro-h1 {
+
+    font-size: 10vh;
+
 
     font-family: 'Fredoka One', sans-serif;
     color:rgb(255, 255, 255);
@@ -88,6 +100,8 @@ padding: 10px;
 
 .activity-intro-h3 {
 
+    font-size: 4vh;
+
     font-family: Quicksand, sans-serif;
     color: #ffffff;
 
@@ -96,8 +110,9 @@ padding: 10px;
 
 .activity-intro-descr {
 
+    font-size: 3vh;
+
     font-family: Quicksand, sans-serif;
-    font-size: small;
     color: #ffffff;
 
     margin-left: 50px;
@@ -106,6 +121,8 @@ padding: 10px;
 }
 
 .activity-intro-ready {
+
+    font-size: 4vh;
 
     font-family: Quicksand, sans-serif;
     color: #ffffff;
