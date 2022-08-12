@@ -63,7 +63,7 @@ function parentPassword() {
             <br/> 
             Log in to see {child}'s achievements.
           </h2>
-          <button className="parent-button" onClick={parentPassword}>
+          <button className="parent-button" data-cy="submit" onClick={parentPassword}>
             Parent Dashboard
           </button>
         </section>

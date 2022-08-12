@@ -5,7 +5,7 @@ const Profile = () => {
   const [userMetadata, setUserMetadata] = useState(null);
   useEffect(() => {
     const getUserMetadata = async () => {
-      const domain = "dev-itvkaklp.us.auth0.com";
+      const domain = "dev-5vyznydl.us.auth0.com";
       try {
         const accessToken = await getAccessTokenSilently({
           audience: `https://${domain}/api/v2/`,

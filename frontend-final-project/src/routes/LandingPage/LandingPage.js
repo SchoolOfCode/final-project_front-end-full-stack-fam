@@ -36,6 +36,10 @@ export default function LandingPage() {
           <nav>
             <Link to="/Signup">Sign Up</Link>
           </nav>
+         
+          {/* <Link to="/login">
+          <button>Log On</button>
+          </Link> */}
         </div>
       </>
     );
