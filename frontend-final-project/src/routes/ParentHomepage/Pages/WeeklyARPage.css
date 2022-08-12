@@ -29,3 +29,12 @@ margin-left: 45%;
   grid-area: bodyLeft;
   overflow: scroll;
 } 
+
+.war-text-heading {
+    font-family: Quicksand, sans-serif;
+    text-align: center;
+}
+
+.war-text {
+    font-family: Quicksand, sans-serif;
+}

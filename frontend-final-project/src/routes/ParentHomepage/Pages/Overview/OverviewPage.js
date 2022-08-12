@@ -18,7 +18,7 @@ const Overview = ({userData, attempts}) => {
             <IoPersonCircleOutline /> Student Profile{" "}
           </h2>
           <div className="profile-font"> 
-          <h4> Name: {userData.name} </h4>
+          <h4 className="bold-topics-font"> Name: {userData.name} </h4>
           <h4> Activities Completed: 1/7 </h4>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Overview = ({userData, attempts}) => {
 
           <form className="form-text">
           <input type="checkbox" checked /> 
-          <label>  Number and place value  </label> <br></br>
+          <label className="bold-topics-font">  Number and place value  </label> <br></br>
           <input type="checkbox" />
           <label> Addition and subtraction </label> <br></br>
           <input type="checkbox" />

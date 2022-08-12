@@ -27,9 +27,9 @@ const ParentHomepage = () => {
 
    
     //If the user is not logged in, automatically redirects back to landing page.
-    // if(!isAuthenticated) {
-    // navigate("/");
-    // }
+    if(!isAuthenticated) {
+    navigate("/");
+    }
 
     async function getChildDataByEmail() {
         let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);

@@ -90,3 +90,7 @@
   font-family: Quicksand, sans-serif;
   font-size: 19px;
 }
+
+.bold-topics-font {
+  font-weight: bolder;
+}

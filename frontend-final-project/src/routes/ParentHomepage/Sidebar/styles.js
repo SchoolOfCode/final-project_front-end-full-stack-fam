@@ -60,12 +60,14 @@ export const SLinkLabel = styled.span`
     display: block;
     flex: 1;
     margin-left: ${v.smSpacing};
+    font-family: Quicksand, sans-serif;
 `;
 
 export const STheme = styled.div`
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-family: Quicksand, sans-serif;
 `;
 export const SThemeLabel = styled.span`
     display: block;

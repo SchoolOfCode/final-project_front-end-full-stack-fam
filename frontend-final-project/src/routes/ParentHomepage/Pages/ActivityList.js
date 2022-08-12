@@ -10,7 +10,7 @@ const ActivityList = ( {activityList}) => {
                return <li>
                 {item.datecompleted}
                 <br/>
-                {item.name} completed 'Number Line' at {item.timecompleted} with a score of {item.scoreone}%
+                {item.name} completed 'Number Line' at {item.timecompleted} with a score of {item.scoreone}%.
                 </li>
            }
            )} 
