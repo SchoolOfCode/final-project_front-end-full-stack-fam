@@ -13,7 +13,7 @@ export default function LoginPage({childData}) {
   const navigate = useNavigate();
 
   const child = childData.payload[0].name
-  const parentName = user.name
+  const parentName = "Charlie"
 
   
 function parentPassword() {
@@ -47,7 +47,7 @@ function parentPassword() {
             <br/> 
             Log in to see {child}'s achievements.
           </h2>
-          <button className="parent-button" onClick={parentPassword}>
+          <button className="parent-button" data-cy="submit" onClick={parentPassword}>
             Parent Dashboard
           </button>
         </section>
