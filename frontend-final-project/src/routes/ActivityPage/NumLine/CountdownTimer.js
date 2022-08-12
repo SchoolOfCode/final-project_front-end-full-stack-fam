@@ -31,12 +31,14 @@ const Timer = (props) => {
 
 
     return (
-        <div>
+        <div className='the-countdown-component'>
         { minutes === 0 && seconds === 0
             ? <div className='time-up-text'>TIME'S UP!</div>
             : <div className='countdown-prog-container'>
-            <progress className='progress-countdown' value = {seconds} max="60" id="progressBar"></progress>
             <p className='the-countdown-text' > {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</p>
+
+            <progress className='progress-countdown' value = {seconds} max="60" id="progressBar"></progress>
+            
             </div>
         }
         </div>

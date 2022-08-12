@@ -54,7 +54,7 @@ export default function ChildHomepage() {
             <section className= 'expedition-button-container'>
               <nav className= "nav">
                 <Link to="/login">
-                  <button className='back-button'>Back to Login</button>
+                  <button className='back-button-exp'>Back to Login</button>
                 </Link>
               </nav>
               <nav className= "nav">

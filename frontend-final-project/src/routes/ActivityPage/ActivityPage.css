@@ -1,99 +1,117 @@
-/* NAS - I changed root in APP.css and root is also called to here - I removed the root background colour since it conflicted with the night mode on my page */
-:root{
+
+
+.title-text-container{
 
     display: flex;
-}
-
-
-.text-container{
-
-    width:100vw;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+
+    width:100vw;
+    height: 30vh;
 
 }
 
 
 .the-activity-heading{
 
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', sans-serif;
     color:rgb(255, 255, 255);
     text-shadow: 2px 2px #E3A200;
     -webkit-text-stroke: 0.1px black;
-    
-
 
 
 }
 
 .lets-go-h2 {
 
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', sans-serif;
     color:rgb(255, 255, 255);
     -webkit-text-stroke: 0.1px black;
-    align-content: space-around;
-
-}
-
-.the-activity-description{
-
-    color:rgb(255, 255, 255);
-    font-family: 'Quicksand', sans-serif;
 
 }
 
 
-
-.focus-area{
-    width:100vw;
-    height:100vh;
+.focus-area {
+    width: 100vw;
+    height: 50vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.num-line-container{
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-    width: 60%;
 
 }
 
-.the-card-div {
+
+.the-card-div-activity {
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     width: 55vw;
-    
+    height: 50vh;
 
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #51bfce82;
 
 }
+
+
+
+.num-line-container{
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    height: 30vh;
+    width: 50vw;
+
+}
+
+
+
+.button-container-numline{
+
+    margin-top: 1%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+
+}
+
 
 
 .banana-container {
 
 
     width: 60px;
-    height: 160px;
+    height: 50vh;
     
-    border: solid #ffffff9a 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: solid #1900ff4c 3px;
     border-radius: 25px;
-    background-color: #edca7365;
+    background-color: #51bfce3f;
 
 }
 
 
+.the-score-container {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.num-grid{
+}
+
+.num-grid {
     display: grid;
     grid-template-columns: repeat( 10 , 1fr );
     margin: 0;
@@ -103,42 +121,62 @@
 }
 
 
-.num-text{
+.num-text {
     text-align: center;
 
     margin: 0;
     clip-path: circle();
-    background-color: rgb(233, 185, 30);
+    background-color: #e9b91e;
+    
     font-size: 30px;
+    color: #6e0000;
 }
 
-.num-input{
+.num-input {
     text-align: center;
     margin: 0;
     width: 100%;
-    clip-path: circle();
-    background-color: rgb(233, 185, 30);
+    background-color: #ffffff00;
     border: none;
     outline: none;
     font-size: 30px;
-    color: #2260c5;
+    color: #3113ab;
 }
 
-.submit-button{
+
+
+.submit-button {
     padding: 10px;
 
 }
 
-p{
+p {
     margin: 0;
 }
 
-.button-container{
-    margin-top: 1%;
-    width:100%;
-    display: flex;
-    justify-content: center;
+.the-activity-description{
+
+    color:rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+
 }
+
+.score-counter {
+
+    color: #ffffff;
+    font-size: small; 
+    
+    }
+
+
+
+.the-invisible-timer {
+
+    border: solid black;
+    visibility: hidden;
+
+}
+
 
 .activity-background-image-daytime {
     position:fixed;

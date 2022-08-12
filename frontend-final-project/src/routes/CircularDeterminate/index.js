@@ -8,6 +8,7 @@ import { createTheme , ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({ palette: {
     primary: { main : "#F1B728"},
+    zIndex: "7"
 
    } })
 

@@ -1,22 +1,38 @@
-.the-actual-line {
+.input-border {
 
-background-color: #E3A200;
-width: 100%;
-padding: 5px;
-border-radius: 25px;
-    
-}
-
-.score-counter {
-
-color: #ffffff
+    background-color: #e9b91e;
+    border: solid #1900ff7c 3px;
+    border-radius: 50%;
 
 }
 
 .num-input {
 
-    padding: 10px;
-    height: 10%;
-    width: 10%;
+    width: 100%;
+
+}
+
+
+.the-countdown-text {
+
+    color:#ffffff00;
+
+}
+
+
+.the-actual-line {
+
+background-color: #E3A200;
+width: 97%;
+padding: 5px;
+border-radius: 25px;
+    
+}
+
+
+.spacer-div {
+
+padding: 10px;
+
 
 }

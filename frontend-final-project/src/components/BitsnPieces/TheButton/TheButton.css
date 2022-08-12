@@ -1,0 +1,16 @@
+the-button {
+
+    background-color:#EDBD48;
+    color:#5F061E;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+
+
+}
+
+the-button:hover{
+    background-color: #5F061E;
+    color: #EDBD48
+  }
+
+

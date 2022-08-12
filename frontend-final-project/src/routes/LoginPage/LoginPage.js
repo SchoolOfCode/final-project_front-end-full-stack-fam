@@ -6,16 +6,32 @@ import { useNavigate } from "react-router-dom";
 import LogoutButton from "../../components/Login/LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 
-export default function LoginPage({childData}) {
+export default function LoginPage({ childName, setChildName }) {
 
   const [password, setPassword] = useState("1234");
-  const {user} = useAuth0()
+  const {user, isAuthenticated} = useAuth0()
   const navigate = useNavigate();
 
-  const child = childData.payload[0].name
-  const parentName = "Charlie"
 
+    async function getChildDataByEmail() {
+      let response = await fetch(`https://fullstack-fam.herokuapp.com/parent/search/?email=${user.email}`);
+      let data = await response.json();
+      setChildName(data.payload[0].name)
+      console.log(data.payload[0].name)
+    }
+    
+    useEffect(() => {
+      if(isAuthenticated){
+        console.log(user.email)
+        getChildDataByEmail();
+      }
+    }, []);
   
+    const child = childName
+    const parent = user.name
+  
+
+
 function parentPassword() {
   let access = prompt("Please enter your password");
   if (access === password) {
@@ -43,7 +59,7 @@ function parentPassword() {
         </section>
         <section className = 'parent-text-button-container'>
           <h2 className = {"parent-welcome " + "animate__animated " + "animate__pulse " + "animate__infinite " + "animate__slow " + "animate__delay-2s"}>
-            Welcome, {parentName}! 
+            Welcome, {parent}! 
             <br/> 
             Log in to see {child}'s achievements.
           </h2>
