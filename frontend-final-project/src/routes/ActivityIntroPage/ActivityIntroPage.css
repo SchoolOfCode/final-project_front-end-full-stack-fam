@@ -33,10 +33,10 @@
 
 .start-button-intro {
 
-display: flex;
-padding: 25% 65%;
-font-size: 150%;
-text-decoration: none;
+    display: flex;
+    padding: 25% 65%;
+    font-size: 150%;
+    text-decoration: none;
 
 }
 
