@@ -42,13 +42,13 @@ return(
 
                 <section className = "the-button-container">
                     <nav>
-                        <Link to="/activity">
+                        <Link to="/activity" style={{textDecoration: "none"}} >
                             <button className="start-button-intro">Yes!</button>
                         </Link>
                     </nav>
 
                     <nav>
-                        <Link to="/expedition">
+                        <Link to="/expedition" style={{textDecoration: "none"}} >
                             <button className='back-button-intro'>Back to Map</button>
                         </Link>
                     </nav>

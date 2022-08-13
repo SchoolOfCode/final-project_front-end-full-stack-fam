@@ -23,7 +23,7 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
 
   //     }
 
-// no comment
+
 
   return (
       <>
