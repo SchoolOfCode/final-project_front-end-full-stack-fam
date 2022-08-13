@@ -9,20 +9,71 @@ import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
 import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
 import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
+import { Hidden } from '@mui/material';
 
 export default function ActivityPage({score, setScore, clicks , setClicks , mismatch , setMismatch}) {
   
-  // const [isVisible , setIsVisible] = useState(false);
+
+  function BananaVis() {
+
+    if ( score === 1 ) {
+
+      return (
+          <div className='banana-wrap'> 
+            <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+          </div>
+        )
+
+    } else if ( score === 2 ) {
 
 
-  //   useEffect(() => {
-  //     const showBanana1 = event => {
-  //     if (score <= 1) {
-  //       setIsVisible(true)
-  //     };
+      return (
 
-  //     }
+      <div className='banana-wrap'>
+        <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+        <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      </div>
 
+      )
+
+
+    } else if ( score === 3 ) {
+
+      return (
+        <div className='banana-wrap'>
+          <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+          <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+          <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      </div>
+      )
+
+    } else if ( score === 4 ) {
+
+    return (
+      <div className='banana-wrap'>
+        <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+        <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+        <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+        <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+    </div>
+    )
+
+  } else if ( score >= 5 ) {
+
+    return (
+      <div className='banana-wrap'>
+        <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+        <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+        <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+        <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+        <img className="banana-5" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+    </div>
+
+    )
+    
+  }
+
+  }
 
 
   return (
@@ -38,18 +89,31 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
 
         <main className ="focus-area">
 
+
+
+
           <div className='the-card-div-activity'>
+
             <h3 className='the-activity-description'>Fill in the missing numbers to collect the fruit...</h3>
+
             <div className='num-line-container'>
+
                 <NumLine score = {score} setScore = {setScore} clicks = {clicks} setClicks = {setClicks} mismatch = {mismatch} setMismatch = {setMismatch}/>
+
               </div>
+
           </div>
 
+
+
           <div className="banana-container">
-            <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
-            <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
-            <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="70" height="70"></img>
+
+            <BananaVis />
+
           </div>
+
+
+
         </main>
         
           <div className="the-invisible-timer">

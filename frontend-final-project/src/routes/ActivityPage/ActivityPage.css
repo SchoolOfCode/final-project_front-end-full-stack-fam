@@ -1,3 +1,9 @@
+:root {
+
+ --banana-hidden: visibility: hidden;
+ --banana-visible: visibility: visible;
+
+}
 
 
 .title-text-container {
@@ -25,6 +31,7 @@
 
 
 }
+
 
 .lets-go-h2 {
 
@@ -66,7 +73,7 @@
 
 
 
-.num-line-container{
+.num-line-container {
 
     display: flex;
     flex-direction: column;
@@ -80,7 +87,7 @@
 
 
 
-.button-container-numline{
+.button-container-numline {
 
     margin-top: 1%;
     width:100%;
@@ -93,20 +100,38 @@
 
 .banana-container {
 
-
     width: 90px;
     height: 45vh;
     
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+
 
     border: solid #1900ff4c 4px;
     border-radius: 25px;
     background-color: #51bfce3f;
 
 }
+
+.banana-wrap {
+
+    width: 90px;
+    height: 43vh;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+
+}
+
+
+
+
 
 
 .the-score-container {
@@ -117,17 +142,21 @@
 
 }
 
+
 .num-grid {
+
     display: grid;
     grid-template-columns: repeat( 10 , 1fr );
     margin: 0;
     width: 100%;
     height:50%;
     align-items: center;
+
 }
 
 
 .num-text {
+
     text-align: center;
 
     margin: 0;
@@ -139,7 +168,9 @@
     color: #6e0000;
 }
 
+
 .num-input {
+
     text-align: center;
     margin: 0;
     width: 100%;
@@ -155,10 +186,12 @@
 
 
 .submit-button {
+
     padding: 15px;
     font-size: 150%;
 
 }
+
 
 p {
     margin: 0;
@@ -190,15 +223,19 @@ p {
 
 
 .activity-background-image-daytime {
+
     position:fixed;
     top:0;
     left:0;
     height:100%;
     width:100%;
     z-index: -1;
+
 }
 
+
 .activity-background-image-nighttime {
+
     position:fixed;
     top:0;
     left:0;
