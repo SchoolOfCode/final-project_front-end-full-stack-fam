@@ -65,15 +65,17 @@
     align-content: center;
     justify-content: center;
 
-    height: 70vh;
-    width: 70vh;
+    height: 30vh;
+    width: 30vh;
 
 }
 
 
 .the-banana-itself {
 
-    z-index: 3;
+    position: absolute;
+    z-index: 7;
+    padding: 30px;
     
 }
 
