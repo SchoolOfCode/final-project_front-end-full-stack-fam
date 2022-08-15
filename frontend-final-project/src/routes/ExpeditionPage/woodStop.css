@@ -1,137 +1,100 @@
 
-.stop1{
-width: 100vw;
-height: 100vh;
-}
-
-
 
 .woodStopButton1{
-    position:absolute; top:43%; left:8%;
+    position:absolute; top:54%; left:12%;
     cursor: pointer;
-    border: 40px solid transparent;
-    border-radius: 40px;
+    color:transparent;  
+    border:transparent;
     background-color: transparent;
-    color:transparent;
     
 }
+
 
 .woodStopButton1:hover{
     background-color: transparent;
     color:transparent;
 }
 
-.woodStopButton2:hover{
-    background-color: transparent;
-    color:transparent;
-}
-.woodStopButton3:hover{
-    background-color: transparent;
-    color:transparent;
-}
-.woodStopButton4:hover{
-    background-color: transparent;
-    color:transparent;
-}
-.woodStopButton5:hover{
-    background-color: transparent;
-    color:transparent;
-}
-
-.woodStopButton6:hover{
-    background-color: transparent;
-    color:transparent;
+.woodButton{
+    width:100px;
 }
 
 
 
 
 
-
-
-
-.woodStop2{
-    position:absolute;
-    max-width: 5%;
-    left:38%;
-    top:38%;
-}
-
-.woodStopButton2{
-    position: absolute;
-    top: 37%;
-    left: 36%;
+.woodButton2{
+    position:absolute; top:20%; left:43%;
+    width:100px;
     cursor: pointer;
-    border: 40px solid transparent;
-    border-radius: 40px;
+    color:transparent;  
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+
+.woodButton2:hover{
     background-color: transparent;
     color:transparent;
 }
 
 
 
-
-.woodStop3{
-    position:absolute;
-    max-width: 5%;
-    top:48%;
-    left:62%;
-}
-
-.woodStopButton3{
-    position: absolute;
-    top: 85%;
-    left: 37%;
+.woodButton3{
+    position:absolute;top:47%; left:43%;
+    width:100px;
     cursor: pointer;
-    border: 40px solid transparent;
-    border-radius: 40px;
+    color:transparent;  
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+
+.woodButton3:hover{
     background-color: transparent;
     color:transparent;
 }
 
 
-
-
-
-
-.woodStop4{
-    position:absolute;
-    max-width: 5%;
-    left:38%;
-    top:88%;
-}
-
-.woodStopButton4{
-    position: absolute;
-    top: 47%;
-    left: 60.5%;
+.woodButton4{
+    position:absolute; top:62%; left:51%;
+    width:100px;
     cursor: pointer;
-    border: 40px solid transparent;
-    border-radius: 40px;
+    color:transparent;  
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+
+.woodButton4:hover{
     background-color: transparent;
     color:transparent;
 }
 
-
-
-
-.woodStop5{
-    position:absolute;
-    max-width: 5%;
-    left:82%;
-    top:81%;
-}
-
-.woodStopButton5{
-    position: absolute;
-    top: 80%;
-    left: 79%;
+.woodButton5{
+    position:absolute; top:47%; left:71%;
+    width:100px;
     cursor: pointer;
-    border: 40px solid transparent;
-    border-radius: 40px;
+    color:transparent;  
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+
+.woodButton5:hover{
     background-color: transparent;
     color:transparent;
 }
+
+
+
+
+
+
 
 
 
