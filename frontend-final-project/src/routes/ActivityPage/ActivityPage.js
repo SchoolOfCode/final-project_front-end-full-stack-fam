@@ -62,11 +62,11 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
 
     return (
       <div className='banana-wrap'>
-        <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
-        <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-5" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+      <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-5" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
     </div>
 
     )

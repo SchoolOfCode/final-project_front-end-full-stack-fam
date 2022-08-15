@@ -72,11 +72,11 @@ return (
             {newArray.map(function(item){
                 if( item === "input" ){
                     return <div className='input-border'><input className="num-input" type='text' maxLength={2}></input></div>
-                }
-                else{
+                } else {
                     return <p className="num-text">{item}</p>
                 }
             })}
+
         </section>
 
 
