@@ -3,8 +3,6 @@ import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
 import { createTheme , ThemeProvider } from '@mui/material/styles';
 
-// no comment
-
 
 const theme = createTheme({ palette: {
     primary: { main : "#F1B728"},
@@ -36,7 +34,7 @@ export default function CircularDeterminate({percentageState}) {
     <ThemeProvider theme={theme}>
     <Stack className='circular-determinate' spacing={2} direction="row">
       
-      <CircularProgress variant="determinate" value={progress} 
+      <CircularProgress size='20vh' variant="determinate" value={progress} 
         style={{position: 'relative', zIndex: '1'}}
       />
     

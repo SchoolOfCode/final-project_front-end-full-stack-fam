@@ -109,10 +109,7 @@ let scorePercent = Math.floor((score / totalDone) * 100)
         <h3 className='h3-encouragement'>{theMessage}</h3>
 
         <div className='the-score-badge'>
-          <CircularDeterminate score={score} percentageState={percentageState}/>
-
-          <img className='the-banana-itself' src="banana-line-drawing.png" alt="banana" width="50" height="50" style={{zIndex: '1'}}></img>
-
+          <CircularDeterminate size='10vw' score={score} percentageState={percentageState}/>
         </div>
 
         <div className='score-percentage-container'>
