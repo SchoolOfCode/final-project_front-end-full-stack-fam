@@ -7,8 +7,6 @@ import { LinearProgBar } from '../LinearProgBar';
 
 import './ActivityPage.css';
 import NumLine from './NumLine/NumLine';
-import { ReactComponent as MySvgDay} from '../../daytime-jungle.svg';
-import { ReactComponent as MySvgNight} from '../../nighttime-jungle.svg';
 import { Hidden } from '@mui/material';
 
 export default function ActivityPage({score, setScore, clicks , setClicks , mismatch , setMismatch}) {
@@ -79,8 +77,8 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
   return (
       <>
         <LogoutButton/>
-        <MySvgDay className='activity-background-image-daytime'/>
-        <MySvgNight className='activity-background-image-nighttime'/>
+        <div className='activity-background-image-daytime'/>
+        <div className='activity-background-image-nighttime'/>
 
         <div className='title-text-container'>
           <h1 className='the-activity-heading'>Number Line</h1>

@@ -101,8 +101,8 @@ let scorePercent = Math.floor((score / totalDone) * 100)
 
     return <>
         <LogoutButton/>
-        <main className = "main-area">
-       <MySvgNight className = 'results-background-image-nighttime'/>
+        <main className = "results-main-area">
+       {/* <MySvgNight className = 'results-background-image-nighttime'/> */}
           <h1 className='well-done-h1'>Well Done!</h1>
           <div className="the-card-div">
         <h2 className='h2-score'>You got {score} correct</h2>

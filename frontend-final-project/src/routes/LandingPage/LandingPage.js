@@ -33,9 +33,10 @@ export default function LandingPage() {
             <LoginButton />
             <LogoutButton />
           </section>
-          <nav>
+          {/* CURRENTLY COMMENTED OUT UNTIL SIGNUP FUNCTIONALITY IMPLEMENTED
+           <nav>
             <Link to="/Signup">Sign Up</Link>
-          </nav>
+          </nav> */}
          
           {/* <Link to="/login">
           <button>Log On</button>

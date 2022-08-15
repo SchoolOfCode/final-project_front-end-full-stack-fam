@@ -1,10 +1,18 @@
-.main-area {
+.results-main-area {
     width:100vw;
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
+
+    overflow: hidden;
+    background-image: url(../../nighttime-jungle.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .results-background-image-nighttime {
     position:fixed;
