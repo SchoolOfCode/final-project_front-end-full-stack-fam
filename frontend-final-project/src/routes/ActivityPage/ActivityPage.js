@@ -62,11 +62,11 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
 
     return (
       <div className='banana-wrap'>
-        <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
-        <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
-        <img className="banana-5" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-1" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/> 
+      <img className="banana-2" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-3" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-4" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
+      <img className="banana-5" src="banana-line-drawing.png" alt="banana" width="60" height="60" style={{visibility: "visible"}}/>
     </div>
 
     )
@@ -119,7 +119,10 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
           <div className="the-invisible-timer">
             <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
           </div>
-      
+          <div className='the-score-container'>
+              <p className = "score-counter">SCORE: {score} WRONG: {mismatch}</p> 
+            </div>
+
         {/* <nav>
           <Link to="/login">Back to Log In</Link>
         </nav>
