@@ -9,22 +9,23 @@
 
 .ChildHomeButton{
     position: absolute;
-    height: 160px;
-    width: 160px;
-    bottom:7%;
-    left: 5.5%;
+    
+    bottom:-5%;
+    left: 20%;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: transparent;
     background-color: transparent;
     color:rgb(238, 244, 209);
     font-size: 3em;
     text-decoration: none;
     font-family: 'Oil Age Heiroglyphs', sans-serif;
-   
-    
-        
+      
     
 }
+.hut{
+width:260px;
+}
+
 
 
 
