@@ -19,7 +19,7 @@ const Timer = (props) => {
                     navigate("/results")
                 } else {
                     setMinutes(minutes - 1);
-                    setSeconds(59);
+                    setSeconds(15);
                 }
             } 
         }, 1000)
