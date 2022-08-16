@@ -115,7 +115,7 @@ export default function ActivityPage({score, setScore, clicks , setClicks , mism
         </main>
         
           <div className="the-invisible-timer">
-            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {60}/>
+            <Timer className='the-countdown-text' initialMinute = {0} initialSeconds = {15}/>
           </div>
           <div className='the-score-container'>
               <p className = "score-counter">SCORE: {score} WRONG: {mismatch}</p> 
